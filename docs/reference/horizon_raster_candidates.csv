@@ -1,0 +1,163 @@
+table_name,column_sequence,column_name,label,logical_type,field_size,precision,units,domain_name,property_family,estimate
+chorizon,2,desgndisc,Disc,Integer,,,,,desgndisc,single
+chorizon,5,desgnvert,Sub,Integer,,,,,desgnvert,single
+chorizon,6,hzdept_l,Top Depth - Low Value,Integer,,,centimeters,,hzdept,low
+chorizon,7,hzdept_r,Top Depth - Representative Value,Integer,,,centimeters,,hzdept,representative
+chorizon,8,hzdept_h,Top Depth - High Value,Integer,,,centimeters,,hzdept,high
+chorizon,9,hzdepb_l,Bottom Depth - Low Value,Integer,,,centimeters,,hzdepb,low
+chorizon,10,hzdepb_r,Bottom Depth - Representative Value,Integer,,,centimeters,,hzdepb,representative
+chorizon,11,hzdepb_h,Bottom Depth - High Value,Integer,,,centimeters,,hzdepb,high
+chorizon,12,hzthk_l,Thickness - Low Value,Integer,,,centimeters,,hzthk,low
+chorizon,13,hzthk_r,Thickness - Representative Value,Integer,,,centimeters,,hzthk,representative
+chorizon,14,hzthk_h,Thickness - High Value,Integer,,,centimeters,,hzthk,high
+chorizon,15,fraggt10_l,Rock >10 - Low Value,Integer,,,percent,,fraggt10,low
+chorizon,16,fraggt10_r,Rock >10 - Representative Value,Integer,,,percent,,fraggt10,representative
+chorizon,17,fraggt10_h,Rock >10 - High Value,Integer,,,percent,,fraggt10,high
+chorizon,18,frag3to10_l,Rock 3-10 - Low Value,Integer,,,percent,,frag3to10,low
+chorizon,19,frag3to10_r,Rock 3-10 - Representative Value,Integer,,,percent,,frag3to10,representative
+chorizon,20,frag3to10_h,Rock 3-10 - High Value,Integer,,,percent,,frag3to10,high
+chorizon,21,sieveno4_l,#4 - Low Value,Float,,1,percent,,sieveno4,low
+chorizon,22,sieveno4_r,#4 - Representative Value,Float,,1,percent,,sieveno4,representative
+chorizon,23,sieveno4_h,#4 - High Value,Float,,1,percent,,sieveno4,high
+chorizon,24,sieveno10_l,#10 - Low Value,Float,,1,percent,,sieveno10,low
+chorizon,25,sieveno10_r,#10 - Representative Value,Float,,1,percent,,sieveno10,representative
+chorizon,26,sieveno10_h,#10 - High Value,Float,,1,percent,,sieveno10,high
+chorizon,27,sieveno40_l,#40 - Low Value,Float,,1,percent,,sieveno40,low
+chorizon,28,sieveno40_r,#40 - Representative Value,Float,,1,percent,,sieveno40,representative
+chorizon,29,sieveno40_h,#40 - High Value,Float,,1,percent,,sieveno40,high
+chorizon,30,sieveno200_l,#200 - Low Value,Float,,1,percent,,sieveno200,low
+chorizon,31,sieveno200_r,#200 - Representative Value,Float,,1,percent,,sieveno200,representative
+chorizon,32,sieveno200_h,#200 - High Value,Float,,1,percent,,sieveno200,high
+chorizon,33,sandtotal_l,Total Sand - Low Value,Float,,1,percent,,sandtotal,low
+chorizon,34,sandtotal_r,Total Sand - Representative Value,Float,,1,percent,,sandtotal,representative
+chorizon,35,sandtotal_h,Total Sand - High Value,Float,,1,percent,,sandtotal,high
+chorizon,36,sandvc_l,vcos - Low Value,Float,,1,percent,,sandvc,low
+chorizon,37,sandvc_r,vcos - Representative Value,Float,,1,percent,,sandvc,representative
+chorizon,38,sandvc_h,vcos - High Value,Float,,1,percent,,sandvc,high
+chorizon,39,sandco_l,cos - Low Value,Float,,1,percent,,sandco,low
+chorizon,40,sandco_r,cos - Representative Value,Float,,1,percent,,sandco,representative
+chorizon,41,sandco_h,cos - High Value,Float,,1,percent,,sandco,high
+chorizon,42,sandmed_l,ms - Low Value,Float,,1,percent,,sandmed,low
+chorizon,43,sandmed_r,ms - Representative Value,Float,,1,percent,,sandmed,representative
+chorizon,44,sandmed_h,ms - High Value,Float,,1,percent,,sandmed,high
+chorizon,45,sandfine_l,fs - Low Value,Float,,1,percent,,sandfine,low
+chorizon,46,sandfine_r,fs - Representative Value,Float,,1,percent,,sandfine,representative
+chorizon,47,sandfine_h,fs - High Value,Float,,1,percent,,sandfine,high
+chorizon,48,sandvf_l,vfs - Low Value,Float,,1,percent,,sandvf,low
+chorizon,49,sandvf_r,vfs - Representative Value,Float,,1,percent,,sandvf,representative
+chorizon,50,sandvf_h,vfs - High Value,Float,,1,percent,,sandvf,high
+chorizon,51,silttotal_l,Total Silt - Low Value,Float,,1,percent,,silttotal,low
+chorizon,52,silttotal_r,Total Silt - Representative Value,Float,,1,percent,,silttotal,representative
+chorizon,53,silttotal_h,Total Silt - High Value,Float,,1,percent,,silttotal,high
+chorizon,54,siltco_l,Coarse Silt - Low Value,Float,,1,percent,,siltco,low
+chorizon,55,siltco_r,Coarse Silt - Representative Value,Float,,1,percent,,siltco,representative
+chorizon,56,siltco_h,Coarse Silt - High Value,Float,,1,percent,,siltco,high
+chorizon,57,siltfine_l,Fine Silt - Low Value,Float,,1,percent,,siltfine,low
+chorizon,58,siltfine_r,Fine Silt - Representative Value,Float,,1,percent,,siltfine,representative
+chorizon,59,siltfine_h,Fine Silt - High Value,Float,,1,percent,,siltfine,high
+chorizon,60,claytotal_l,Total Clay - Low Value,Float,,1,percent,,claytotal,low
+chorizon,61,claytotal_r,Total Clay - Representative Value,Float,,1,percent,,claytotal,representative
+chorizon,62,claytotal_h,Total Clay - High Value,Float,,1,percent,,claytotal,high
+chorizon,63,claysizedcarb_l,CaCO3 Clay - Low Value,Float,,1,percent,,claysizedcarb,low
+chorizon,64,claysizedcarb_r,CaCO3 Clay - Representative Value,Float,,1,percent,,claysizedcarb,representative
+chorizon,65,claysizedcarb_h,CaCO3 Clay - High Value,Float,,1,percent,,claysizedcarb,high
+chorizon,66,om_l,OM - Low Value,Float,,2,percent,,om,low
+chorizon,67,om_r,OM - Representative Value,Float,,2,percent,,om,representative
+chorizon,68,om_h,OM - High Value,Float,,2,percent,,om,high
+chorizon,69,dbtenthbar_l,Db 0.1 bar H2O - Low Value,Float,,2,grams per cubic centimeter,,dbtenthbar,low
+chorizon,70,dbtenthbar_r,Db 0.1 bar H2O - Representative Value,Float,,2,grams per cubic centimeter,,dbtenthbar,representative
+chorizon,71,dbtenthbar_h,Db 0.1 bar H2O - High Value,Float,,2,grams per cubic centimeter,,dbtenthbar,high
+chorizon,72,dbthirdbar_l,Db 0.33 bar H2O - Low Value,Float,,2,grams per cubic centimeter,,dbthirdbar,low
+chorizon,73,dbthirdbar_r,Db 0.33 bar H2O - Representative Value,Float,,2,grams per cubic centimeter,,dbthirdbar,representative
+chorizon,74,dbthirdbar_h,Db 0.33 bar H2O - High Value,Float,,2,grams per cubic centimeter,,dbthirdbar,high
+chorizon,75,dbfifteenbar_l,Db 15 bar H2O - Low Value,Float,,2,grams per cubic centimeter,,dbfifteenbar,low
+chorizon,76,dbfifteenbar_r,Db 15 bar H2O - Representative Value,Float,,2,grams per cubic centimeter,,dbfifteenbar,representative
+chorizon,77,dbfifteenbar_h,Db 15 bar H2O - High Value,Float,,2,grams per cubic centimeter,,dbfifteenbar,high
+chorizon,78,dbovendry_l,Db oven dry - Low Value,Float,,2,grams per cubic centimeter,,dbovendry,low
+chorizon,79,dbovendry_r,Db oven dry - Representative Value,Float,,2,grams per cubic centimeter,,dbovendry,representative
+chorizon,80,dbovendry_h,Db oven dry - High Value,Float,,2,grams per cubic centimeter,,dbovendry,high
+chorizon,81,partdensity,Dp,Float,,2,grams per cubic centimeter,,partdensity,single
+chorizon,82,ksat_l,Ksat - Low Value,Float,,4,micrometers per second,,ksat,low
+chorizon,83,ksat_r,Ksat - Representative Value,Float,,4,micrometers per second,,ksat,representative
+chorizon,84,ksat_h,Ksat - High Value,Float,,4,micrometers per second,,ksat,high
+chorizon,85,awc_l,AWC - Low Value,Float,,2,centimeters per centimeter,,awc,low
+chorizon,86,awc_r,AWC - Representative Value,Float,,2,centimeters per centimeter,,awc,representative
+chorizon,87,awc_h,AWC - High Value,Float,,2,centimeters per centimeter,,awc,high
+chorizon,88,wtenthbar_l,0.1 bar H2O - Low Value,Float,,1,percent,,wtenthbar,low
+chorizon,89,wtenthbar_r,0.1 bar H2O - Representative Value,Float,,1,percent,,wtenthbar,representative
+chorizon,90,wtenthbar_h,0.1 bar H2O - High Value,Float,,1,percent,,wtenthbar,high
+chorizon,91,wthirdbar_l,0.33 bar H2O - Low Value,Float,,1,percent,,wthirdbar,low
+chorizon,92,wthirdbar_r,0.33 bar H2O - Representative Value,Float,,1,percent,,wthirdbar,representative
+chorizon,93,wthirdbar_h,0.33 bar H2O - High Value,Float,,1,percent,,wthirdbar,high
+chorizon,94,wfifteenbar_l,15 bar H2O - Low Value,Float,,1,percent,,wfifteenbar,low
+chorizon,95,wfifteenbar_r,15 bar H2O - Representative Value,Float,,1,percent,,wfifteenbar,representative
+chorizon,96,wfifteenbar_h,15 bar H2O - High Value,Float,,1,percent,,wfifteenbar,high
+chorizon,97,wsatiated_l,Satiated H2O - Low Value,Integer,,,percent,,wsatiated,low
+chorizon,98,wsatiated_r,Satiated H2O - Representative Value,Integer,,,percent,,wsatiated,representative
+chorizon,99,wsatiated_h,Satiated H2O - High Value,Integer,,,percent,,wsatiated,high
+chorizon,100,lep_l,LEP - Low Value,Float,,1,percent,,lep,low
+chorizon,101,lep_r,LEP - Representative Value,Float,,1,percent,,lep,representative
+chorizon,102,lep_h,LEP - High Value,Float,,1,percent,,lep,high
+chorizon,103,ll_l,LL - Low Value,Float,,1,percent,,ll,low
+chorizon,104,ll_r,LL - Representative Value,Float,,1,percent,,ll,representative
+chorizon,105,ll_h,LL - High Value,Float,,1,percent,,ll,high
+chorizon,106,pi_l,PI - Low Value,Float,,1,percent,,pi,low
+chorizon,107,pi_r,PI - Representative Value,Float,,1,percent,,pi,representative
+chorizon,108,pi_h,PI - High Value,Float,,1,percent,,pi,high
+chorizon,109,aashind_l,AASHTO Group Index - Low Value,Integer,,,,,aashind,low
+chorizon,110,aashind_r,AASHTO Group Index - Representative Value,Integer,,,,,aashind,representative
+chorizon,111,aashind_h,AASHTO Group Index - High Value,Integer,,,,,aashind,high
+chorizon,114,caco3_l,CaCO3 - Low Value,Integer,,,percent,,caco3,low
+chorizon,115,caco3_r,CaCO3 - Representative Value,Integer,,,percent,,caco3,representative
+chorizon,116,caco3_h,CaCO3 - High Value,Integer,,,percent,,caco3,high
+chorizon,117,gypsum_l,Gypsum - Low Value,Integer,,,percent,,gypsum,low
+chorizon,118,gypsum_r,Gypsum - Representative Value,Integer,,,percent,,gypsum,representative
+chorizon,119,gypsum_h,Gypsum - High Value,Integer,,,percent,,gypsum,high
+chorizon,120,sar_l,SAR - Low Value,Float,,1,,,sar,low
+chorizon,121,sar_r,SAR - Representative Value,Float,,1,,,sar,representative
+chorizon,122,sar_h,SAR - High Value,Float,,1,,,sar,high
+chorizon,123,ec_l,EC - Low Value,Float,,1,decisiemens per meter,,ec,low
+chorizon,124,ec_r,EC - Representative Value,Float,,1,decisiemens per meter,,ec,representative
+chorizon,125,ec_h,EC - High Value,Float,,1,decisiemens per meter,,ec,high
+chorizon,126,cec7_l,CEC-7 - Low Value,Float,,1,milliequivalents per 100 grams,,cec7,low
+chorizon,127,cec7_r,CEC-7 - Representative Value,Float,,1,milliequivalents per 100 grams,,cec7,representative
+chorizon,128,cec7_h,CEC-7 - High Value,Float,,1,milliequivalents per 100 grams,,cec7,high
+chorizon,129,ecec_l,ECEC - Low Value,Float,,1,milliequivalents per 100 grams,,ecec,low
+chorizon,130,ecec_r,ECEC - Representative Value,Float,,1,milliequivalents per 100 grams,,ecec,representative
+chorizon,131,ecec_h,ECEC - High Value,Float,,1,milliequivalents per 100 grams,,ecec,high
+chorizon,132,sumbases_l,Sum of Bases - Low Value,Float,,1,milliequivalents per 100 grams,,sumbases,low
+chorizon,133,sumbases_r,Sum of Bases - Representative Value,Float,,1,milliequivalents per 100 grams,,sumbases,representative
+chorizon,134,sumbases_h,Sum of Bases - High Value,Float,,1,milliequivalents per 100 grams,,sumbases,high
+chorizon,135,ph1to1h2o_l,pH H2O - Low Value,Float,,1,,,ph1to1h2o,low
+chorizon,136,ph1to1h2o_r,pH H2O - Representative Value,Float,,1,,,ph1to1h2o,representative
+chorizon,137,ph1to1h2o_h,pH H2O - High Value,Float,,1,,,ph1to1h2o,high
+chorizon,138,ph01mcacl2_l,pH CaCl2 - Low Value,Float,,1,,,ph01mcacl2,low
+chorizon,139,ph01mcacl2_r,pH CaCl2 - Representative Value,Float,,1,,,ph01mcacl2,representative
+chorizon,140,ph01mcacl2_h,pH CaCl2 - High Value,Float,,1,,,ph01mcacl2,high
+chorizon,141,freeiron_l,Free Iron - Low Value,Float,,2,percent,,freeiron,low
+chorizon,142,freeiron_r,Free Iron - Representative Value,Float,,2,percent,,freeiron,representative
+chorizon,143,freeiron_h,Free Iron - High Value,Float,,2,percent,,freeiron,high
+chorizon,144,feoxalate_l,Oxalate Fe - Low Value,Float,,2,milligrams per kilogram,,feoxalate,low
+chorizon,145,feoxalate_r,Oxalate Fe - Representative Value,Float,,2,milligrams per kilogram,,feoxalate,representative
+chorizon,146,feoxalate_h,Oxalate Fe - High Value,Float,,2,milligrams per kilogram,,feoxalate,high
+chorizon,147,extracid_l,Ext Acidity - Low Value,Float,,1,milliequivalents per 100 grams,,extracid,low
+chorizon,148,extracid_r,Ext Acidity - Representative Value,Float,,1,milliequivalents per 100 grams,,extracid,representative
+chorizon,149,extracid_h,Ext Acidity - High Value,Float,,1,milliequivalents per 100 grams,,extracid,high
+chorizon,150,extral_l,Extract Al - Low Value,Float,,2,milliequivalents per 100 grams,,extral,low
+chorizon,151,extral_r,Extract Al - Representative Value,Float,,2,milliequivalents per 100 grams,,extral,representative
+chorizon,152,extral_h,Extract Al - High Value,Float,,2,milliequivalents per 100 grams,,extral,high
+chorizon,153,aloxalate_l,Oxalate Al - Low Value,Float,,1,milligrams per kilogram,,aloxalate,low
+chorizon,154,aloxalate_r,Oxalate Al - Representative Value,Float,,1,milligrams per kilogram,,aloxalate,representative
+chorizon,155,aloxalate_h,Oxalate Al - High Value,Float,,1,milligrams per kilogram,,aloxalate,high
+chorizon,156,pbray1_l,Bray 1 Phos - Low Value,Float,,1,milligrams per kilogram,,pbray1,low
+chorizon,157,pbray1_r,Bray 1 Phos - Representative Value,Float,,1,milligrams per kilogram,,pbray1,representative
+chorizon,158,pbray1_h,Bray 1 Phos - High Value,Float,,1,milligrams per kilogram,,pbray1,high
+chorizon,159,poxalate_l,Oxalate Phos - Low Value,Float,,1,milligrams per kilogram,,poxalate,low
+chorizon,160,poxalate_r,Oxalate Phos - Representative Value,Float,,1,milligrams per kilogram,,poxalate,representative
+chorizon,161,poxalate_h,Oxalate Phos - High Value,Float,,1,milligrams per kilogram,,poxalate,high
+chorizon,162,ph2osoluble_l,Water Soluble Phos - Low Value,Float,,1,milligrams per kilogram,,ph2osoluble,low
+chorizon,163,ph2osoluble_r,Water Soluble Phos - Representative Value,Float,,1,milligrams per kilogram,,ph2osoluble,representative
+chorizon,164,ph2osoluble_h,Water Soluble Phos - High Value,Float,,1,milligrams per kilogram,,ph2osoluble,high
+chorizon,165,ptotal_l,Total Phos - Low Value,Float,,2,percent,,ptotal,low
+chorizon,166,ptotal_r,Total Phos - Representative Value,Float,,2,percent,,ptotal,representative
+chorizon,167,ptotal_h,Total Phos - High Value,Float,,2,percent,,ptotal,high

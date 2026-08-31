@@ -1,0 +1,63 @@
+table_name,column_name,label,logical_type,units,nonnull_mukeys,raster_mukeys,nonnull_fraction,proposed_encoding
+mapunit,farmlndcl,Farm Class,Choice,,327766,330433,0.991928772247324,dictionary-coded categorical
+mapunit,iacornsr,IA CSR,Integer,,12479,330433,0.037765598472307545,numeric
+mapunit,interpfocus,Interpretive Focus,String,,71981,330433,0.21783841202301224,dictionary-coded categorical
+mapunit,invesintens,Order of Mapping,Choice,,329629,330433,0.9975668289789458,dictionary-coded categorical
+mapunit,lkey,Legend Key,Integer,,330433,330433,1.0,numeric
+mapunit,mapunitlfw_h,Linear Feature Width - High Value,Integer,meters,2,330433,6.052664231478091e-6,numeric
+mapunit,mapunitlfw_l,Linear Feature Width - Low Value,Integer,meters,72,330433,0.00021789591233321127,numeric
+mapunit,mapunitlfw_r,Linear Feature Width - Representative Value,Integer,meters,17,330433,0.00005144764596756377,numeric
+mapunit,mapunitpfa_h,Point Feature Area - High Value,Float,acres,9,330433,0.00002723698904165141,numeric
+mapunit,mapunitpfa_l,Point Feature Area - Low Value,Float,acres,10,330433,0.000030263321157390454,numeric
+mapunit,mapunitpfa_r,Point Feature Area - Representative Value,Float,acres,9,330433,0.00002723698904165141,numeric
+mapunit,muacres,Total Acres,Integer,acres,328959,330433,0.9955391864614006,numeric
+mapunit,mucertstat,Map Unit Certification Status,Choice,,1033,330433,0.003126201075558434,dictionary-coded categorical
+mapunit,muhelcl,HEL,Choice,,0,330433,0.0,dictionary-coded categorical
+mapunit,mukind,Kind,Choice,,330080,330433,0.9989317047631441,dictionary-coded categorical
+mapunit,muname,Mapunit Name,String,,330433,330433,1.0,dictionary-coded categorical
+mapunit,mustatus,Status,Choice,,1050,330433,0.0031776487215259977,dictionary-coded categorical
+mapunit,musym,Mapunit Symbol,String,,330433,330433,1.0,dictionary-coded categorical
+mapunit,muwathelcl,HEL Water,Choice,,0,330433,0.0,dictionary-coded categorical
+mapunit,muwndhelcl,HEL Wind,Choice,,0,330433,0.0,dictionary-coded categorical
+mapunit,nhiforsoigrp,NH Forest Soil Grp,Choice,,2634,330433,0.007971358792856646,dictionary-coded categorical
+mapunit,nhspiagr,NH SPI Agr,Float,,2964,330433,0.00897004839105053,numeric
+mapunit,vtsepticsyscl,VT Septic System,Choice,,2323,330433,0.007030169504861803,dictionary-coded categorical
+muaggatt,awmmfpwwta,AWM - Manure and Food Processing Waste - Weighted Average,Float,,316254,330433,0.9570896369309361,numeric
+muaggatt,aws0100wta,Available Water Storage 0-100 cm - Weighted Average,Float,centimeters,318101,330433,0.9626792723487061,numeric
+muaggatt,aws0150wta,Available Water Storage 0-150 cm - Weighted Average,Float,centimeters,318102,330433,0.9626822986808218,numeric
+muaggatt,aws025wta,Available Water Storage 0-25 cm - Weighted Average,Float,centimeters,318091,330433,0.9626490090275487,numeric
+muaggatt,aws050wta,Available Water Storage 0-50 cm - Weighted Average,Float,centimeters,318098,330433,0.9626701933523589,numeric
+muaggatt,brockdepmin,Bedrock Depth - Minimum,Integer,centimeters,88494,330433,0.2678122342502111,numeric
+muaggatt,drclassdcd,Drainage Class - Dominant Condition,Choice,,313635,330433,0.9491636731198155,dictionary-coded categorical
+muaggatt,drclasswettest,Drainage Class - Wettest,Choice,,317775,330433,0.9616926880789751,dictionary-coded categorical
+muaggatt,engcmssdcd,ENG - Construction Materials; Sand Source - Dominant Condition,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,engcmssmp,ENG - Construction Materials; Sand Source - Most Probable,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,engdwbdcd,ENG - Dwellings with Basements - Dominant Condition,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,engdwbll,ENG - Dwellings with Basements - Least Limiting,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,engdwbml,ENG - Dwellings with Basements - Most Limiting,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,engdwobdcd,ENG - Dwellings W/O Basements - Dominant Condition,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,englrsdcd,ENG - Local Roads and Streets - Dominant Condition,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,engsldcd,ENG - Sewage Lagoons - Dominant Condition,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,engsldcp,ENG - Sewage Lagoons - Dominant Component,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,engstafdcd,ENG - Septic Tank Absorption Fields - Dominant Condition,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,engstafll,ENG - Septic Tank Absorption Fields - Least Limiting,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,engstafml,ENG - Septic Tank Absorption Fields - Most Limiting,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,flodfreqdcd,Flooding Frequency - Dominant Condition,Choice,,312675,330433,0.9462583942887061,dictionary-coded categorical
+muaggatt,flodfreqmax,Flooding Frequency - Maximum,Choice,,315210,330433,0.9539301462021045,dictionary-coded categorical
+muaggatt,forpehrtdcp,FOR - Potential Erosion Hazard (Road/Trail) - Dominant Component,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,hydclprs,Hydric Classification - Presence,Integer,,329969,330433,0.9985957818982971,numeric
+muaggatt,hydgrpdcd,Hydrologic Group - Dominant Conditions,Choice,,315134,330433,0.9537001449613084,dictionary-coded categorical
+muaggatt,iccdcd,Irrigated Capability Class - Dominant Condition,Choice,,61423,330433,0.18588639754503938,dictionary-coded categorical
+muaggatt,iccdcdpct,Irrigated Capability Class  - Dominant Condition Aggregate Percent,Integer,,329969,330433,0.9985957818982971,numeric
+muaggatt,muname,Mapunit Name,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,mustatus,Status,Choice,,1050,330433,0.0031776487215259977,dictionary-coded categorical
+muaggatt,musym,Mapunit Symbol,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,niccdcd,Non-Irrigated Capability Class - Dominant Condition,Choice,,321206,330433,0.9720760335680758,dictionary-coded categorical
+muaggatt,niccdcdpct,Non-Irrigated Capability Class  - Dominant Condition Aggregate Percent,Integer,,329969,330433,0.9985957818982971,numeric
+muaggatt,pondfreqprs,Ponding Frequency - Presence,Choice,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,slopegraddcp,Slope Gradient - Dominant Component,Float,percent,319899,330433,0.9681206174928049,numeric
+muaggatt,slopegradwta,Slope Gradient - Weighted Average,Float,percent,321989,330433,0.9744456516146995,numeric
+muaggatt,urbrecptdcd,URB/REC - Paths and Trails - Dominant Condition,String,,329969,330433,0.9985957818982971,dictionary-coded categorical
+muaggatt,urbrecptwta,URB/REC - Paths and Trails - Weighted Average,Float,,316690,330433,0.9584091177333983,numeric
+muaggatt,wtdepannmin,Water Table Depth - Annual - Minimum,Integer,centimeters,116193,330433,0.3516386075240669,numeric
+muaggatt,wtdepaprjunmin,Water Table Depth - April - June - Minimum,Integer,centimeters,108208,330433,0.3274733455798906,numeric

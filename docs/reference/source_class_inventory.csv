@@ -1,0 +1,15 @@
+region_group,source,survey_area_records,pixels
+alaska,SSURGO,137,1857519094
+american_samoa,SSURGO,1,222945
+conus,RSS,8,45282675
+conus,SSURGO,3199,8565857196
+conus,STATSGO,1,144306758
+fed_states_micronesia,SSURGO,4,717347
+guam,SSURGO,1,616876
+hawaii,SSURGO,8,19340368
+marshall_is,SSURGO,1,19676
+mexico,SSURGO,1,156173
+northern_mariana_is,SSURGO,2,520999
+palau,SSURGO,1,514300
+puerto_rico,SSURGO,7,15183390
+virgin_is,SSURGO,1,2109193

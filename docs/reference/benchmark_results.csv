@@ -1,0 +1,11 @@
+operation,run,seconds,result_shape_or_rows
+rasterio 512x512 CONUS window,1,0.007325375103391707,"(512, 512)"
+rasterio 512x512 CONUS window,2,0.004988167085684836,"(512, 512)"
+rasterio 4096x4096 CONUS window,1,0.08234895800705999,"(4096, 4096)"
+rasterio 4096x4096 CONUS window,2,0.07303491700440645,"(4096, 4096)"
+rasterio national overview 1625x1024,1,0.04061333299614489,"(1024, 1625)"
+rasterio national overview 1625x1024,2,0.03596383391413838,"(1024, 1625)"
+rioxarray 512x512 selection materialized,1,0.008603416965343058,"(1, 512, 512)"
+rioxarray 512x512 selection materialized,2,0.006536208908073604,"(1, 512, 512)"
+SQLite 1000 indexed MUKEY lookups,1,0.020743916975334287,1000
+SQLite 1000 indexed MUKEY lookups,2,0.001226999913342297,1000

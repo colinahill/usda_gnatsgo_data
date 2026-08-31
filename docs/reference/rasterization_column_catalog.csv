@@ -1,0 +1,885 @@
+table_name,column_sequence,column_name,label,logical_type,field_size,precision,units,domain_name,plan_group,join_path,output_dimensions,rasterization_status,proposed_encoding
+chaashto,1,aashtocl,AASHTO,Choice,254,,,aashto_group_classification,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chaashto,2,rvindicator,RV?,Boolean,3,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chaashto,3,chkey,Chorizon Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chaashto,4,chaashtokey,Chorizon AASHTO Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chconsistence,1,rupresblkmst,Rupture Moist,Choice,254,,,rupture_resist_block_moist,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chconsistence,2,rupresblkdry,Rupture Dry,Choice,254,,,rupture_resist_block_dry,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chconsistence,3,rupresblkcem,Rupture Cement,Choice,254,,,rupture_resist_block_cem,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chconsistence,4,rupresplate,Rupture Plate,Choice,254,,,rupture_resist_plate,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chconsistence,5,mannerfailure,Manner of Failure,Choice,254,,,manner_of_failure,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chconsistence,6,stickiness,Stickiness,Choice,254,,,stickiness,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chconsistence,7,plasticity,Plasticity,Choice,254,,,plasticity,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chconsistence,8,rvindicator,RV?,Boolean,3,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chconsistence,9,chkey,Chorizon Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chconsistence,10,chconsistkey,Chorizon Consistence Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chdesgnsuffix,1,desgnsuffix,Suffix,Choice,254,,,horz_desgn_letter_suffix,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chdesgnsuffix,2,chkey,Chorizon Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chdesgnsuffix,3,chdesgnsfxkey,Chorizon Designation Suffix Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chfrags,1,fragvol_l,Vol % - Low Value,Integer,,,percent,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chfrags,2,fragvol_r,Vol % - Representative Value,Integer,,,percent,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chfrags,3,fragvol_h,Vol % - High Value,Integer,,,percent,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chfrags,4,fragkind,Kind,Choice,254,,,fragment_kind,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chfrags,5,fragsize_l,Size - Low Value,Integer,,,millimeters,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chfrags,6,fragsize_r,Size - Representative Value,Integer,,,millimeters,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chfrags,7,fragsize_h,Size - High Value,Integer,,,millimeters,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chfrags,8,fragshp,Shape,Choice,254,,,fragment_shape,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chfrags,9,fraground,Roundness,Choice,254,,,fragment_roundness,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chfrags,10,fraghard,Hardness,Choice,254,,,rupture_resist_block_cem,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chfrags,11,chkey,Chorizon Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chfrags,12,chfragskey,Chorizon Fragments Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chorizon,1,hzname,Designation,String,12,,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+chorizon,2,desgndisc,Disc,Integer,,,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,3,desgnmaster,Master,Choice,254,,,horz_desgn_master,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+chorizon,4,desgnmasterprime,Prime,Choice,254,,,horz_desgn_master_prime,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+chorizon,5,desgnvert,Sub,Integer,,,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,6,hzdept_l,Top Depth - Low Value,Integer,,,centimeters,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,7,hzdept_r,Top Depth - Representative Value,Integer,,,centimeters,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,8,hzdept_h,Top Depth - High Value,Integer,,,centimeters,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,9,hzdepb_l,Bottom Depth - Low Value,Integer,,,centimeters,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,10,hzdepb_r,Bottom Depth - Representative Value,Integer,,,centimeters,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,11,hzdepb_h,Bottom Depth - High Value,Integer,,,centimeters,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,12,hzthk_l,Thickness - Low Value,Integer,,,centimeters,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,13,hzthk_r,Thickness - Representative Value,Integer,,,centimeters,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,14,hzthk_h,Thickness - High Value,Integer,,,centimeters,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,15,fraggt10_l,Rock >10 - Low Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,16,fraggt10_r,Rock >10 - Representative Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,17,fraggt10_h,Rock >10 - High Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,18,frag3to10_l,Rock 3-10 - Low Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,19,frag3to10_r,Rock 3-10 - Representative Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,20,frag3to10_h,Rock 3-10 - High Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,21,sieveno4_l,#4 - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,22,sieveno4_r,#4 - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,23,sieveno4_h,#4 - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,24,sieveno10_l,#10 - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,25,sieveno10_r,#10 - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,26,sieveno10_h,#10 - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,27,sieveno40_l,#40 - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,28,sieveno40_r,#40 - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,29,sieveno40_h,#40 - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,30,sieveno200_l,#200 - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,31,sieveno200_r,#200 - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,32,sieveno200_h,#200 - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,33,sandtotal_l,Total Sand - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,34,sandtotal_r,Total Sand - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,35,sandtotal_h,Total Sand - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,36,sandvc_l,vcos - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,37,sandvc_r,vcos - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,38,sandvc_h,vcos - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,39,sandco_l,cos - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,40,sandco_r,cos - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,41,sandco_h,cos - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,42,sandmed_l,ms - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,43,sandmed_r,ms - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,44,sandmed_h,ms - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,45,sandfine_l,fs - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,46,sandfine_r,fs - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,47,sandfine_h,fs - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,48,sandvf_l,vfs - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,49,sandvf_r,vfs - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,50,sandvf_h,vfs - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,51,silttotal_l,Total Silt - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,52,silttotal_r,Total Silt - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,53,silttotal_h,Total Silt - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,54,siltco_l,Coarse Silt - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,55,siltco_r,Coarse Silt - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,56,siltco_h,Coarse Silt - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,57,siltfine_l,Fine Silt - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,58,siltfine_r,Fine Silt - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,59,siltfine_h,Fine Silt - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,60,claytotal_l,Total Clay - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,61,claytotal_r,Total Clay - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,62,claytotal_h,Total Clay - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,63,claysizedcarb_l,CaCO3 Clay - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,64,claysizedcarb_r,CaCO3 Clay - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,65,claysizedcarb_h,CaCO3 Clay - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,66,om_l,OM - Low Value,Float,,2,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,67,om_r,OM - Representative Value,Float,,2,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,68,om_h,OM - High Value,Float,,2,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,69,dbtenthbar_l,Db 0.1 bar H2O - Low Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,70,dbtenthbar_r,Db 0.1 bar H2O - Representative Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,71,dbtenthbar_h,Db 0.1 bar H2O - High Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,72,dbthirdbar_l,Db 0.33 bar H2O - Low Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,73,dbthirdbar_r,Db 0.33 bar H2O - Representative Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,74,dbthirdbar_h,Db 0.33 bar H2O - High Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,75,dbfifteenbar_l,Db 15 bar H2O - Low Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,76,dbfifteenbar_r,Db 15 bar H2O - Representative Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,77,dbfifteenbar_h,Db 15 bar H2O - High Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,78,dbovendry_l,Db oven dry - Low Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,79,dbovendry_r,Db oven dry - Representative Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,80,dbovendry_h,Db oven dry - High Value,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,81,partdensity,Dp,Float,,2,grams per cubic centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,82,ksat_l,Ksat - Low Value,Float,,4,micrometers per second,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,83,ksat_r,Ksat - Representative Value,Float,,4,micrometers per second,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,84,ksat_h,Ksat - High Value,Float,,4,micrometers per second,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,85,awc_l,AWC - Low Value,Float,,2,centimeters per centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,86,awc_r,AWC - Representative Value,Float,,2,centimeters per centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,87,awc_h,AWC - High Value,Float,,2,centimeters per centimeter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,88,wtenthbar_l,0.1 bar H2O - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,89,wtenthbar_r,0.1 bar H2O - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,90,wtenthbar_h,0.1 bar H2O - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,91,wthirdbar_l,0.33 bar H2O - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,92,wthirdbar_r,0.33 bar H2O - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,93,wthirdbar_h,0.33 bar H2O - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,94,wfifteenbar_l,15 bar H2O - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,95,wfifteenbar_r,15 bar H2O - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,96,wfifteenbar_h,15 bar H2O - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,97,wsatiated_l,Satiated H2O - Low Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,98,wsatiated_r,Satiated H2O - Representative Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,99,wsatiated_h,Satiated H2O - High Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,100,lep_l,LEP - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,101,lep_r,LEP - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,102,lep_h,LEP - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,103,ll_l,LL - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,104,ll_r,LL - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,105,ll_h,LL - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,106,pi_l,PI - Low Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,107,pi_r,PI - Representative Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,108,pi_h,PI - High Value,Float,,1,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,109,aashind_l,AASHTO Group Index - Low Value,Integer,,,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,110,aashind_r,AASHTO Group Index - Representative Value,Integer,,,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,111,aashind_h,AASHTO Group Index - High Value,Integer,,,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,112,kwfact,Kw,Choice,254,,,soil_erodibility_factor,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+chorizon,113,kffact,Kf,Choice,254,,,soil_erodibility_factor,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+chorizon,114,caco3_l,CaCO3 - Low Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,115,caco3_r,CaCO3 - Representative Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,116,caco3_h,CaCO3 - High Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,117,gypsum_l,Gypsum - Low Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,118,gypsum_r,Gypsum - Representative Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,119,gypsum_h,Gypsum - High Value,Integer,,,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,120,sar_l,SAR - Low Value,Float,,1,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,121,sar_r,SAR - Representative Value,Float,,1,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,122,sar_h,SAR - High Value,Float,,1,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,123,ec_l,EC - Low Value,Float,,1,decisiemens per meter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,124,ec_r,EC - Representative Value,Float,,1,decisiemens per meter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,125,ec_h,EC - High Value,Float,,1,decisiemens per meter,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,126,cec7_l,CEC-7 - Low Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,127,cec7_r,CEC-7 - Representative Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,128,cec7_h,CEC-7 - High Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,129,ecec_l,ECEC - Low Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,130,ecec_r,ECEC - Representative Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,131,ecec_h,ECEC - High Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,132,sumbases_l,Sum of Bases - Low Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,133,sumbases_r,Sum of Bases - Representative Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,134,sumbases_h,Sum of Bases - High Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,135,ph1to1h2o_l,pH H2O - Low Value,Float,,1,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,136,ph1to1h2o_r,pH H2O - Representative Value,Float,,1,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,137,ph1to1h2o_h,pH H2O - High Value,Float,,1,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,138,ph01mcacl2_l,pH CaCl2 - Low Value,Float,,1,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,139,ph01mcacl2_r,pH CaCl2 - Representative Value,Float,,1,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,140,ph01mcacl2_h,pH CaCl2 - High Value,Float,,1,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,141,freeiron_l,Free Iron - Low Value,Float,,2,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,142,freeiron_r,Free Iron - Representative Value,Float,,2,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,143,freeiron_h,Free Iron - High Value,Float,,2,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,144,feoxalate_l,Oxalate Fe - Low Value,Float,,2,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,145,feoxalate_r,Oxalate Fe - Representative Value,Float,,2,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,146,feoxalate_h,Oxalate Fe - High Value,Float,,2,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,147,extracid_l,Ext Acidity - Low Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,148,extracid_r,Ext Acidity - Representative Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,149,extracid_h,Ext Acidity - High Value,Float,,1,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,150,extral_l,Extract Al - Low Value,Float,,2,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,151,extral_r,Extract Al - Representative Value,Float,,2,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,152,extral_h,Extract Al - High Value,Float,,2,milliequivalents per 100 grams,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,153,aloxalate_l,Oxalate Al - Low Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,154,aloxalate_r,Oxalate Al - Representative Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,155,aloxalate_h,Oxalate Al - High Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,156,pbray1_l,Bray 1 Phos - Low Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,157,pbray1_r,Bray 1 Phos - Representative Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,158,pbray1_h,Bray 1 Phos - High Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,159,poxalate_l,Oxalate Phos - Low Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,160,poxalate_r,Oxalate Phos - Representative Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,161,poxalate_h,Oxalate Phos - High Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,162,ph2osoluble_l,Water Soluble Phos - Low Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,163,ph2osoluble_r,Water Soluble Phos - Representative Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,164,ph2osoluble_h,Water Soluble Phos - High Value,Float,,1,milligrams per kilogram,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,165,ptotal_l,Total Phos - Low Value,Float,,2,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,166,ptotal_r,Total Phos - Representative Value,Float,,2,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,167,ptotal_h,Total Phos - High Value,Float,,2,percent,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+chorizon,168,excavdifcl,Excav Diff,Choice,254,,,excavation_difficulty_class,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+chorizon,169,excavdifms,Excav Diff Moisture,Choice,254,,,observed_soil_moisture_status,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+chorizon,170,cokey,Component Key,String,254,,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",linkage_key,retain only when it has independent provenance value
+chorizon,171,chkey,Chorizon Key,String,254,,,,horizon_base,mukey -> component -> chorizon,"(depth_interval, statistic, y, x)",linkage_key,retain only when it has independent provenance value
+chpores,1,poreqty_l,Quantity - Low Value,Float,,1,pores per area,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chpores,2,poreqty_r,Quantity - Representative Value,Float,,1,pores per area,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chpores,3,poreqty_h,Quantity - High Value,Float,,1,pores per area,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chpores,4,poresize,Size,Choice,254,,,pore_root_size,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chpores,5,porecont,Continuity,Choice,254,,,pore_continuity_vertical,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chpores,6,poreshp,Shape,Choice,254,,,pore_shape,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chpores,7,rvindicator,RV?,Boolean,3,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chpores,8,chkey,Chorizon Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chpores,9,chporeskey,Chorizon Pores Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chstruct,1,structgrade,Grade,Choice,254,,,structure_grade,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chstruct,2,structsize,Size,Choice,254,,,structure_size,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chstruct,3,structtype,Type,Choice,254,,,structure_type,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chstruct,4,structid,Structure ID,Integer,,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chstruct,5,structpartsto,Parts to Structure ID,Integer,,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chstruct,6,chstructgrpkey,Chorizon Structure Group Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chstruct,7,chstructkey,Chorizon Structure Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chstructgrp,1,structgrpname,Structure,String,100,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chstructgrp,2,rvindicator,RV?,Boolean,3,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chstructgrp,3,chkey,Chorizon Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chstructgrp,4,chstructgrpkey,Chorizon Structure Group Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chtext,1,recdate,Date,Date/Time,,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chtext,2,chorizontextkind,Kind,Choice,254,,,chorizon_text_kind,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chtext,3,textcat,Category,String,20,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chtext,4,textsubcat,Subcategory,String,20,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chtext,5,text,Text,Vtext,,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",lookup_only,dictionary/companion table; do not repeat narrative text
+chtext,6,chkey,Chorizon Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chtext,7,chtextkey,Chorizon Text Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chtexture,1,texcl,Texture,Choice,254,,,texture_class,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chtexture,2,lieutex,In Lieu,Choice,254,,,terms_used_in_lieu_of_texture,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chtexture,3,chtgkey,Chorizon Texture Group Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chtexture,4,chtkey,Chorizon Texture Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chtexturegrp,1,texture,Tex Mod & Class,String,30,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chtexturegrp,2,stratextsflag,Stratified?,Boolean,3,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chtexturegrp,3,rvindicator,RV?,Boolean,3,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chtexturegrp,4,texdesc,Texture Description,Vtext,,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",lookup_only,dictionary/companion table; do not repeat narrative text
+chtexturegrp,5,chkey,Chorizon Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chtexturegrp,6,chtgkey,Chorizon Texture Group Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chtexturemod,1,texmod,Modifier,Choice,254,,,texture_modifier,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chtexturemod,2,chtkey,Chorizon Texture Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chtexturemod,3,chtexmodkey,Chorizon Texture Modifier Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chunified,1,unifiedcl,Unified,Choice,254,,,unified_soil_classification,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chunified,2,rvindicator,RV?,Boolean,3,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+chunified,3,chkey,Chorizon Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+chunified,4,chunifiedkey,Chorizon Unified Key,String,254,,,,dimensioned_horizon,mukey -> component -> chorizon -> child table,"(depth_interval, category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cocanopycover,1,plantcov,Canopy Cover %,Integer,,,percent,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocanopycover,2,plantsym,Plant Symbol,String,8,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocanopycover,3,plantsciname,Scientific Name,String,127,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocanopycover,4,plantcomname,Common Name,String,60,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocanopycover,5,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cocanopycover,6,cocanopycovkey,Component Canopy Cover Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cocropyld,1,cropname,Crop Name,Choice,254,,,crop_name,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocropyld,2,yldunits,Units,Choice,254,,,crop_yield_units,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocropyld,3,nonirryield_l,Nirr Yield - Low Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocropyld,4,nonirryield_r,Nirr Yield - Representative Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocropyld,5,nonirryield_h,Nirr Yield - High Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocropyld,6,irryield_l,Irr Yield - Low Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocropyld,7,irryield_r,Irr Yield - Representative Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocropyld,8,irryield_h,Irr Yield - High Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocropyld,9,cropprodindex,Prod Index,Integer,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocropyld,10,vasoiprdgrp,VA Soil Prod Grp,Choice,254,,,va_soil_productivity_group,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cocropyld,11,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cocropyld,12,cocropyldkey,Component Crop Yield Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+codiagfeatures,1,featkind,Kind,Choice,254,,,diag_horz_feat_kind,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+codiagfeatures,2,featdept_l,Top Depth - Low Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+codiagfeatures,3,featdept_r,Top Depth - Representative Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+codiagfeatures,4,featdept_h,Top Depth - High Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+codiagfeatures,5,featdepb_l,Bottom Depth - Low Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+codiagfeatures,6,featdepb_r,Bottom Depth - Representative Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+codiagfeatures,7,featdepb_h,Bottom Depth - High Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+codiagfeatures,8,featthick_l,Thickness - Low Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+codiagfeatures,9,featthick_r,Thickness - Representative Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+codiagfeatures,10,featthick_h,Thickness - High Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+codiagfeatures,11,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+codiagfeatures,12,codiagfeatkey,Component Diagnostic Features Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+coecoclass,1,ecoclasstypename,Ecological Classification Type Name,String,60,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coecoclass,2,ecoclassref,Ecological Classification Reference,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coecoclass,3,ecoclassid,Ecological Classification ID,String,30,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coecoclass,4,ecoclassname,Ecological Classification Name,Vtext,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",lookup_only,dictionary/companion table; do not repeat narrative text
+coecoclass,5,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+coecoclass,6,coecoclasskey,Component Ecological Classification Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+coeplants,1,plantsym,Plant Symbol,String,8,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coeplants,2,plantsciname,Scientific Name,String,127,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coeplants,3,plantcomname,Common Name,String,60,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coeplants,4,forestunprod,Understory Prod %,Integer,,,percent,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coeplants,5,rangeprod,Range Prod %,Integer,,,percent,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coeplants,6,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+coeplants,7,coeplantskey,Component Existing Plants Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+coerosionacc,1,erokind,Kind,Choice,254,,,erosion_accelerated_kind,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coerosionacc,2,rvindicator,RV?,Boolean,3,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coerosionacc,3,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+coerosionacc,4,coeroacckey,Component Erosion Accelerated Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+coforprod,1,plantsym,Plant Symbol,String,8,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprod,2,plantsciname,Scientific Name,String,127,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprod,3,plantcomname,Common Name,String,60,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprod,4,siteindexbase,Site Index Base,Choice,254,,,site_index_curves,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprod,5,siteindex_l,Site Index - Low Value,Integer,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprod,6,siteindex_r,Site Index - Representative Value,Integer,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprod,7,siteindex_h,Site Index - High Value,Integer,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprod,8,fprod_l,Productivity ft3/ac/yr CMAI - Low Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprod,9,fprod_r,Productivity ft3/ac/yr CMAI - Representative Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprod,10,fprod_h,Productivity ft3/ac/yr CMAI - High Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprod,11,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+coforprod,12,cofprodkey,Component Forest Productivity Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+coforprodo,1,siteindexbase,Site Index Base,Choice,254,,,site_index_curves,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprodo,2,siteindex_l,Site Index - Low Value,Integer,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprodo,3,siteindex_r,Site Index - Representative Value,Integer,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprodo,4,siteindex_h,Site Index - High Value,Integer,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprodo,5,fprod_l,Productivity - Low Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprodo,6,fprod_r,Productivity - Representative Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprodo,7,fprod_h,Productivity - High Value,Float,,2,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprodo,8,fprodunits,Units,Choice,254,,,forest_productivity_units,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+coforprodo,9,cofprodkey,Component Forest Productivity Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+coforprodo,10,cofprodokey,Component Forest Productivity Other Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cogeomordesc,1,geomftname,Feature Type,String,30,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cogeomordesc,2,geomfname,Feature Name,String,50,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cogeomordesc,3,geomfmod,Feature Modifier,String,60,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cogeomordesc,4,geomfeatid,Feature ID,Integer,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cogeomordesc,5,existsonfeat,Exists On Feature ID,Integer,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cogeomordesc,6,rvindicator,RV?,Boolean,3,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cogeomordesc,7,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cogeomordesc,8,cogeomdkey,Component Geomorphic Description Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cohydriccriteria,1,hydriccriterion,Hydric Criterion,Choice,254,,,hydric_criteria,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cohydriccriteria,2,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cohydriccriteria,3,cohydcritkey,Component Hydric Criteria Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cointerp,1,cokey,Component Key,String,254,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",linkage_key,retain only when it has independent provenance value
+cointerp,2,mrulekey,Main Rule Key,Integer,,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",linkage_key,retain only when it has independent provenance value
+cointerp,3,mrulename,Main Rule Name,String,60,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+cointerp,4,seqnum,Seq,Integer,,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cointerp,5,rulekey,Rule Key,Integer,,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",linkage_key,retain only when it has independent provenance value
+cointerp,6,rulename,Rule Name,String,60,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+cointerp,7,ruledepth,Rule Depth,Integer,,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cointerp,8,interphr,Interp High Representative Value,Float,,2,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cointerp,9,interphrc,Interp High Representative Value Class,String,254,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+cointerp,10,nullpropdatabool,Null Property Data Boolean,Boolean,3,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+cointerp,11,defpropdatabool,Default Property Data Boolean,Boolean,3,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+cointerp,12,incpropdatabool,Inconsistent Property Data Boolean,Boolean,3,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+cointerp,13,cointerpkey,Component Interpretation Key,String,254,,,,component_interpretation,mukey -> component -> cointerp,"(interpretation, y, x)",linkage_key,retain only when it has independent provenance value
+comonth,1,monthseq,Month Sequence,Integer,,,,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+comonth,2,month,Month,Choice,254,,,flooding_ponding_month,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+comonth,3,flodfreqcl,Flooding Frequency,Choice,254,,,flooding_frequency_class,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+comonth,4,floddurcl,Flooding Duration,Choice,254,,,flooding_duration_class,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+comonth,5,pondfreqcl,Ponding Frequency,Choice,254,,,ponding_frequency_class,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+comonth,6,ponddurcl,Ponding Duration,Choice,254,,,ponding_duration_class,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+comonth,7,ponddep_l,Ponding Depth - Low Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+comonth,8,ponddep_r,Ponding Depth - Representative Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+comonth,9,ponddep_h,Ponding Depth - High Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+comonth,10,dlyavgprecip_l,Daily Precip - Low Value,Integer,,,millimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+comonth,11,dlyavgprecip_r,Daily Precip - Representative Value,Integer,,,millimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+comonth,12,dlyavgprecip_h,Daily Precip - High Value,Integer,,,millimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+comonth,13,dlyavgpotet_l,Daily ET - Low Value,Integer,,,millimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+comonth,14,dlyavgpotet_r,Daily ET - Representative Value,Integer,,,millimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+comonth,15,dlyavgpotet_h,Daily ET - High Value,Integer,,,millimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+comonth,16,cokey,Component Key,String,254,,,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",linkage_key,retain only when it has independent provenance value
+comonth,17,comonthkey,Component Month Key,String,254,,,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",linkage_key,retain only when it has independent provenance value
+component,1,comppct_l,Comp % - Low Value,Integer,,,percent,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,2,comppct_r,Comp % - Representative Value,Integer,,,percent,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,3,comppct_h,Comp % - High Value,Integer,,,percent,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,4,compname,Component Name,String,60,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,5,compkind,Kind,Choice,254,,,component_kind,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,6,majcompflag,Major Component,Boolean,3,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,7,otherph,SIR phase,String,40,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,8,localphase,Local Phase,String,40,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,9,slope_l,Slope Gradient - Low Value,Float,,1,percent,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,10,slope_r,Slope Gradient - Representative Value,Float,,1,percent,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,11,slope_h,Slope Gradient - High Value,Float,,1,percent,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,12,slopelenusle_l,Slope Length USLE - Low Value,Integer,,,meters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,13,slopelenusle_r,Slope Length USLE - Representative Value,Integer,,,meters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,14,slopelenusle_h,Slope Length USLE - High Value,Integer,,,meters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,15,runoff,Runoff Class,Choice,254,,,runoff,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,16,tfact,T,Integer,,,tons per acre per year,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,17,wei,WEI,Choice,254,,tons per acre per year,wind_erodibility_index,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,18,weg,WEG,Choice,254,,,wind_erodibility_group,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,19,erocl,Erosion Class,Choice,254,,,erosion_class,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,20,earthcovkind1,Cover Kind 1,Choice,254,,,earth_cover_kind_level_one,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,21,earthcovkind2,Cover Kind 2,Choice,254,,,earth_cover_kind_level_two,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,22,hydricon,Hydric Condition,Choice,254,,,hydric_condition,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,23,hydricrating,Hydric Rating,Choice,254,,,hydric_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,24,drainagecl,Drainage Class,Choice,254,,,drainage_class,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,25,elev_l,Elevation - Low Value,Float,,1,meters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,26,elev_r,Elevation - Representative Value,Float,,1,meters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,27,elev_h,Elevation - High Value,Float,,1,meters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,28,aspectccwise,Aspect Counter Clockwise,Integer,,,degrees,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,29,aspectrep,Aspect Representative,Integer,,,degrees,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,30,aspectcwise,Aspect Clockwise,Integer,,,degrees,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,31,geomdesc,Geomorphic Description,Vtext,,,,,component_base,mukey -> component,"(statistic, y, x)",lookup_only,dictionary/companion table; do not repeat narrative text
+component,32,albedodry_l,Albedo Dry - Low Value,Float,,2,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,33,albedodry_r,Albedo Dry - Representative Value,Float,,2,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,34,albedodry_h,Albedo Dry - High Value,Float,,2,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,35,airtempa_l,MAAT - Low Value,Float,,1,degrees centigrade,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,36,airtempa_r,MAAT - Representative Value,Float,,1,degrees centigrade,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,37,airtempa_h,MAAT - High Value,Float,,1,degrees centigrade,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,38,map_l,MAP - Low Value,Integer,,,millimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,39,map_r,MAP - Representative Value,Integer,,,millimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,40,map_h,MAP - High Value,Integer,,,millimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,41,reannualprecip_l,REAP - Low Value,Integer,,,millimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,42,reannualprecip_r,REAP - Representative Value,Integer,,,millimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,43,reannualprecip_h,REAP - High Value,Integer,,,millimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,44,ffd_l,Frost Free Days - Low Value,Integer,,,days,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,45,ffd_r,Frost Free Days - Representative Value,Integer,,,days,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,46,ffd_h,Frost Free Days - High Value,Integer,,,days,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,47,nirrcapcl,Nirr LCC,Choice,254,,,capability_class,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,48,nirrcapscl,Nirr Subcl,Choice,254,,,capability_subclass,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,49,nirrcapunit,Nirr LCU,Integer,,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,50,irrcapcl,Irr LCC,Choice,254,,,capability_class,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,51,irrcapscl,Irr Subcl,Choice,254,,,capability_subclass,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,52,irrcapunit,Irr LCU,Integer,,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,53,cropprodindex,Prod Index,Integer,,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,54,constreeshrubgrp,Cons Tree Shrub Group,Choice,254,,,conservation_tree_shrub_group,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,55,wndbrksuitgrp,Windbreak Suitability (Obsolete),Choice,254,,,windbreak_suitability_group,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,56,rsprod_l,Range Prod - Low Value,Integer,,,pounds per acre per year,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,57,rsprod_r,Range Prod - Representative Value,Integer,,,pounds per acre per year,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,58,rsprod_h,Range Prod - High Value,Integer,,,pounds per acre per year,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,59,foragesuitgrpid,Forage Suitability Group ID,String,11,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,60,wlgrain,Grain Habitat,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,61,wlgrass,Grass Habitat,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,62,wlherbaceous,Herbaceous Habitat,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,63,wlshrub,Shrub Habitat,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,64,wlconiferous,Conifer Habitat,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,65,wlhardwood,Hardwood Habitat,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,66,wlwetplant,Wetland Habitat,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,67,wlshallowwat,Water Habitat,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,68,wlrangeland,Rangeland Wildlife,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,69,wlopenland,Openland Wildlife,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,70,wlwoodland,Woodland Wildlife,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,71,wlwetland,Wetland Wildlife,Choice,254,,,wildlife_rating,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,72,soilslippot,Soil Slip Pot,Choice,254,,,soil_slippage_potential,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,73,frostact,Frost Action,Choice,254,,,potential_frost_action,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,74,initsub_l,Init Subsid - Low Value,Integer,,,centimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,75,initsub_r,Init Subsid - Representative Value,Integer,,,centimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,76,initsub_h,Init Subsid - High Value,Integer,,,centimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,77,totalsub_l,Total Subsid - Low Value,Integer,,,centimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,78,totalsub_r,Total Subsid - Representative Value,Integer,,,centimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,79,totalsub_h,Total Subsid - High Value,Integer,,,centimeters,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,80,hydgrp,Hydrologic Group,Choice,254,,,hydrologic_group,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,81,corcon,Corrosion Concrete,Choice,254,,,corrosion_concrete,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,82,corsteel,Corrosion Steel,Choice,254,,,corrosion_uncoated_steel,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,83,taxclname,Taxonomic Class,String,120,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,84,taxorder,Order,Choice,254,,,taxonomic_order,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,85,taxsuborder,Suborder,Choice,254,,,taxonomic_suborder,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,86,taxgrtgroup,Great Group,Choice,254,,,taxonomic_great_group,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,87,taxsubgrp,Subgroup,Choice,254,,,taxonomic_subgroup,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,88,taxpartsize,Particle Size,Choice,254,,,taxonomic_family_particle_size,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,89,taxpartsizemod,Particle Size Mod,Choice,254,,,taxonomic_family_part_size_mod,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,90,taxceactcl,CEC Activity Cl,Choice,254,,,taxonomic_family_c_e_act_class,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,91,taxreaction,Reaction,Choice,254,,,taxonomic_family_reaction,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,92,taxtempcl,Temp Class,Choice,254,,,taxonomic_family_temp_class,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,93,taxmoistscl,Moist Subclass,Choice,254,,,taxonomic_moisture_subclass,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,94,taxtempregime,Temp Regime,Choice,254,,,taxonomic_temp_regime,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,95,soiltaxedition,Keys to Taxonomy Edition Used,Choice,254,,,soil_taxonomy_edition,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,96,castorieindex,CA Storie Index,Integer,,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,97,flecolcomnum,FL Ecol Comm #,String,5,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,98,flhe,FL HE,Choice,3,,,yes_no_n.a.,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,99,flphe,FL PHE,Choice,3,,,yes_no_n.a.,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,100,flsoilleachpot,FL Leach Pot,Choice,254,,,fl_soil_leaching_potential,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,101,flsoirunoffpot,FL Runoff Pot,Choice,254,,,fl_soil_runoff_potential,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,102,fltemik2use,FL Temik,Choice,3,,,yes_no_n.a.,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,103,fltriumph2use,FL Triumph,Choice,3,,,yes_no_n.a.,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,104,indraingrp,IN Drainage Grp,String,3,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,105,innitrateleachi,IN NO3 Leach Index,Integer,,,,,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,numeric raster with documented aggregation
+component,106,misoimgmtgrp,MI Soil Mgmt Grp,Choice,254,,,mi_soil_management_group,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,107,vasoimgtgrp,VA Soil Mgmt Grp,Choice,254,,,va_soil_management_group,component_base,mukey -> component,"(statistic, y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+component,108,mukey,Mapunit Key,Integer,,,,,component_base,mukey -> component,"(statistic, y, x)",linkage_key,retain only when it has independent provenance value
+component,109,cokey,Component Key,String,254,,,,component_base,mukey -> component,"(statistic, y, x)",linkage_key,retain only when it has independent provenance value
+copm,1,pmorder,Vertical Order,Integer,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copm,2,pmmodifier,Textural Modifier,Choice,254,,,parent_material_modifier,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copm,3,pmgenmod,General Modifier,String,60,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copm,4,pmkind,Kind,Choice,254,,,parent_material_kind,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copm,5,pmorigin,Origin,Choice,254,,,parent_material_origin,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copm,6,copmgrpkey,Component Parent Material Group Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+copm,7,copmkey,Component Parent Material Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+copmgrp,1,pmgroupname,Group Name,String,252,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copmgrp,2,rvindicator,RV?,Boolean,3,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copmgrp,3,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+copmgrp,4,copmgrpkey,Component Parent Material Group Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+copwindbreak,1,wndbrkht_l,Height - Low Value,Float,,1,meters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copwindbreak,2,wndbrkht_r,Height - Representative Value,Float,,1,meters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copwindbreak,3,wndbrkht_h,Height - High Value,Float,,1,meters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copwindbreak,4,plantsym,Plant Symbol,String,8,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copwindbreak,5,plantsciname,Scientific Name,String,127,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copwindbreak,6,plantcomname,Common Name,String,60,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+copwindbreak,7,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+copwindbreak,8,copwindbreakkey,Component Potential Windbreak Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+corestrictions,1,reskind,Kind,Choice,254,,,restriction_kind,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+corestrictions,2,reshard,Hardness,Choice,254,,,rupture_resist_block_cem,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+corestrictions,3,resdept_l,Top Depth - Low Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+corestrictions,4,resdept_r,Top Depth - Representative Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+corestrictions,5,resdept_h,Top Depth - High Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+corestrictions,6,resdepb_l,Bottom Depth - Low Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+corestrictions,7,resdepb_r,Bottom Depth - Representative Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+corestrictions,8,resdepb_h,Bottom Depth - High Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+corestrictions,9,resthk_l,Thickness - Low Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+corestrictions,10,resthk_r,Thickness - Representative Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+corestrictions,11,resthk_h,Thickness - High Value,Integer,,,centimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+corestrictions,12,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+corestrictions,13,corestrictkey,Component Restrictions Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cosoilmoist,1,soimoistdept_l,Top Depth - Low Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoilmoist,2,soimoistdept_r,Top Depth - Representative Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoilmoist,3,soimoistdept_h,Top Depth - High Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoilmoist,4,soimoistdepb_l,Bottom Depth - Low Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoilmoist,5,soimoistdepb_r,Bottom Depth - Representative Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoilmoist,6,soimoistdepb_h,Bottom Depth - High Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoilmoist,7,soimoiststat,Moisture Status,Choice,254,,,soil_moisture_status,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,categorical code after dominant-condition logic
+cosoilmoist,8,comonthkey,Component Month Key,String,254,,,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",linkage_key,retain only when it has independent provenance value
+cosoilmoist,9,cosoilmoistkey,Component Soil Moisture Key,String,254,,,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",linkage_key,retain only when it has independent provenance value
+cosoiltemp,1,soitempmm,Monthly Temp,Integer,,,degrees centigrade,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoiltemp,2,soitempdept_l,Top Depth - Low Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoiltemp,3,soitempdept_r,Top Depth - Representative Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoiltemp,4,soitempdept_h,Top Depth - High Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoiltemp,5,soitempdepb_l,Bottom Depth - Low Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoiltemp,6,soitempdepb_r,Bottom Depth - Representative Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoiltemp,7,soitempdepb_h,Bottom Depth - High Value,Integer,,,centimeters,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",yes_after_aggregation,numeric raster with documented aggregation
+cosoiltemp,8,comonthkey,Component Month Key,String,254,,,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",linkage_key,retain only when it has independent provenance value
+cosoiltemp,9,cosoiltempkey,Component Soil Temperature Key,String,254,,,,component_month,mukey -> component -> comonth,"(month[, depth], y, x)",linkage_key,retain only when it has independent provenance value
+cosurffrags,1,sfragcov_l,Cover % - Low Value,Float,,2,percent,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,2,sfragcov_r,Cover % - Representative Value,Float,,2,percent,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,3,sfragcov_h,Cover % - High Value,Float,,2,percent,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,4,distrocks_l,Spacing - Low Value,Float,,2,meters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,5,distrocks_r,Spacing - Representative Value,Float,,2,meters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,6,distrocks_h,Spacing - High Value,Float,,2,meters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,7,sfragkind,Kind,Choice,254,,,fragment_kind,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,8,sfragsize_l,Size - Low Value,Integer,,,millimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,9,sfragsize_r,Size - Representative Value,Integer,,,millimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,10,sfragsize_h,Size - High Value,Integer,,,millimeters,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,11,sfragshp,Shape,Choice,254,,,fragment_shape,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,12,sfraground,Roundness,Choice,254,,,fragment_roundness,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,13,sfraghard,Hardness,Choice,254,,,rupture_resist_block_cem,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurffrags,14,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cosurffrags,15,cosurffragskey,Component Surface Fragments Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cosurfmorphgc,1,geomposmntn,Geomorphic Component - Mountains,Choice,254,,,geomor_pos_mountain,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurfmorphgc,2,geomposhill,Geomorphic Component - Hills,Choice,254,,,geomor_pos_hill,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurfmorphgc,3,geompostrce,Geomorphic Component - Terraces,Choice,254,,,geomor_pos_terrace,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurfmorphgc,4,geomposflats,Geomorphic Component - Flats,Choice,254,,,geomor_pos_flat,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurfmorphgc,5,cogeomdkey,Component Geomorphic Description Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cosurfmorphgc,6,cosurfmorgckey,Component Surface Morphometry - Geomorphic Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cosurfmorphhpp,1,hillslopeprof,Hillslope Profile,Choice,254,,,hillslope_profile,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurfmorphhpp,2,cogeomdkey,Component Geomorphic Description Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cosurfmorphhpp,3,cosurfmorhppkey,Component Surface Morphometry - Hillslope Profile Position,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cosurfmorphmr,1,geomicrorelief,Microrelief Kind,Choice,254,,,microrelief_kind,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurfmorphmr,2,cogeomdkey,Component Geomorphic Description Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cosurfmorphmr,3,cosurfmormrkey,Component Surface Morphometry - Micro Relief Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cosurfmorphss,1,shapeacross,Slope Shape Across,Choice,254,,,slope_shape,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurfmorphss,2,shapedown,Slope Shape Up/Down,Choice,254,,,slope_shape,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cosurfmorphss,3,cogeomdkey,Component Geomorphic Description Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cosurfmorphss,4,cosurfmorsskey,Component Surface Morphometry - Slope Shape Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cotaxfmmin,1,taxminalogy,Mineralogy,Choice,254,,,taxonomic_family_mineralogy,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cotaxfmmin,2,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cotaxfmmin,3,cotaxfmminkey,Component Taxonomic Family Mineralogy Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cotaxmoistcl,1,taxmoistcl,Moisture Class,Choice,254,,,taxonomic_moisture_class,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cotaxmoistcl,2,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cotaxmoistcl,3,cotaxmckey,Component Taxonomic Family Moisture Class Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cotext,1,recdate,Date,Date/Time,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cotext,2,comptextkind,Kind,Choice,254,,,component_text_kind,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cotext,3,textcat,Category,String,20,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cotext,4,textsubcat,Subcategory,String,20,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cotext,5,text,Text,Vtext,,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",lookup_only,dictionary/companion table; do not repeat narrative text
+cotext,6,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cotext,7,cotextkey,Component Text Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cotreestomng,1,plantsym,Plant Symbol,String,8,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cotreestomng,2,plantsciname,Scientific Name,String,127,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cotreestomng,3,plantcomname,Common Name,String,60,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cotreestomng,4,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cotreestomng,5,cotreestomngkey,Component Trees to Manage Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cotxfmother,1,taxfamother,Family Other,Choice,254,,,taxonomic_family_other,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+cotxfmother,2,cokey,Component Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+cotxfmother,3,cotaxfokey,Component Taxonomic Family Other Key,String,254,,,,dimensioned_component,mukey -> component -> child table,"(category[, statistic], y, x) or lookup",linkage_key,retain only when it has independent provenance value
+distinterpmd,1,rulename,Rule Name,String,60,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distinterpmd,2,ruledesign,Rule Design,Choice,254,,,rule_design,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distinterpmd,3,ruledesc,Description,Vtext,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distinterpmd,4,dataafuse,Ready to use?,Boolean,3,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distinterpmd,5,mrecentrulecwlu,Most Recent Rule Component When Last Updated,Date/Time,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distinterpmd,6,rulekey,Rule Key,Integer,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distinterpmd,7,distmdkey,Distribution Metadata Key,Integer,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distinterpmd,8,distinterpmdkey,Distribution Interpretation Metadata Key,Integer,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distlegendmd,1,areatypename,Area Type Name,String,45,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distlegendmd,2,areasymbol,Area Symbol,String,20,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distlegendmd,3,areaname,Area Name,String,135,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distlegendmd,4,ssastatus,Survey Status,Choice,254,,,soil_survey_area_status,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distlegendmd,5,cordate,Correlation Date,Date/Time,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distlegendmd,6,exportcertstatus,Export Certification Status,Choice,254,,,export_certification_status,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distlegendmd,7,exportcertdate,Export Certification Date,Date/Time,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distlegendmd,8,exportmetadata,Export Metadata,Vtext,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distlegendmd,9,lkey,Legend Key,Integer,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distlegendmd,10,distmdkey,Distribution Metadata Key,Integer,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distlegendmd,11,distlegendmdkey,Distribution Legend Metadata Key,Integer,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distmd,1,distgendate,Distribution Generation Date,Date/Time,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distmd,2,diststatus,Distribution Status,Choice,254,,,distribution_status,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distmd,3,interpmaxreasons,Interpretation Maximum Reasons,Integer,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+distmd,4,distmdkey,Distribution Metadata Key,Integer,,,,,distribution_metadata,distribution metadata keys,none,metadata_or_sidecar,not a pixel variable
+featdesc,1,areasymbol,Area Symbol,String,20,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featdesc,2,spatialver,Spatial Version,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featdesc,3,featsym,Feature Symbol,String,3,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featdesc,4,featname,Feature Name,String,80,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featdesc,5,featdesc,Feature Description,Vtext,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featdesc,6,featkey,Feature Key,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featline,1,objectid,Object ID,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featline,2,shape,Shape,SQL Geometry,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featline,3,areasymbol,Area Symbol,String,20,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featline,4,spatialver,Spatial Version,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featline,5,featsym,Feature Symbol,String,3,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featline,6,featkey,Feature Key,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featpoint,1,objectid,Object ID,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featpoint,2,shape,Shape,SQL Geometry,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featpoint,3,areasymbol,Area Symbol,String,20,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featpoint,4,spatialver,Spatial Version,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featpoint,5,featsym,Feature Symbol,String,3,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+featpoint,6,featkey,Feature Key,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+laoverlap,1,areatypename,Area Type Name,String,45,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+laoverlap,2,areasymbol,Area Symbol,String,20,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",linkage_key,retain only when it has independent provenance value
+laoverlap,3,areaname,Area Name,String,135,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+laoverlap,4,areaovacres,Overlap Acres,Integer,,,acres,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+laoverlap,5,lkey,Legend Key,Integer,,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",linkage_key,retain only when it has independent provenance value
+laoverlap,6,lareaovkey,Legend Area Overlap Key,Integer,,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",linkage_key,retain only when it has independent provenance value
+legend,1,areatypename,Area Type Name,String,45,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+legend,2,areasymbol,Area Symbol,String,20,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",linkage_key,retain only when it has independent provenance value
+legend,3,areaname,Area Name,String,135,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+legend,4,areaacres,Area Acres,Integer,,,acres,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"numeric (y, x) raster"
+legend,5,mlraoffice,MLRA Office,Choice,254,,,mlra_office,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+legend,6,legenddesc,Legend Description,String,60,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+legend,7,ssastatus,Survey Status,Choice,254,,,soil_survey_area_status,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+legend,8,mouagncyresp,MOU Agency Responsible,Choice,254,,,mou_agency_responsible,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+legend,9,projectscale,Project Scale,Integer,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"numeric (y, x) raster"
+legend,10,cordate,Correlation Date,Date/Time,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+legend,11,ssurgoarchived,SSURGO Archived,Date/Time,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+legend,12,legendsuituse,Geographic Applicability,Choice,254,,,legend_suitability_for_use,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+legend,13,legendcertstat,Legend Certification Status,Choice,254,,,legend_certification_status,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+legend,14,lkey,Legend Key,Integer,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",linkage_key,retain only when it has independent provenance value
+legendtext,1,recdate,Date,Date/Time,,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+legendtext,2,legendtextkind,Kind,Choice,254,,,legend_text_kind,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+legendtext,3,textcat,Category,String,20,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+legendtext,4,textsubcat,Subcategory,String,20,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+legendtext,5,text,Text,Vtext,,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",lookup_only,dictionary/companion table; do not repeat narrative text
+legendtext,6,lkey,Legend Key,Integer,,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",linkage_key,retain only when it has independent provenance value
+legendtext,7,legtextkey,Legend Text Key,Integer,,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",linkage_key,retain only when it has independent provenance value
+mapunit,1,musym,Mapunit Symbol,String,6,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,2,muname,Mapunit Name,String,175,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,3,mukind,Kind,Choice,254,,,mapunit_kind,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,4,mustatus,Status,Choice,254,,,mapunit_status,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,5,muacres,Total Acres,Integer,,,acres,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+mapunit,6,mapunitlfw_l,Linear Feature Width - Low Value,Integer,,,meters,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+mapunit,7,mapunitlfw_r,Linear Feature Width - Representative Value,Integer,,,meters,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+mapunit,8,mapunitlfw_h,Linear Feature Width - High Value,Integer,,,meters,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+mapunit,9,mapunitpfa_l,Point Feature Area - Low Value,Float,,1,acres,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+mapunit,10,mapunitpfa_r,Point Feature Area - Representative Value,Float,,1,acres,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+mapunit,11,mapunitpfa_h,Point Feature Area - High Value,Float,,1,acres,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+mapunit,12,farmlndcl,Farm Class,Choice,254,,,farmland_classification,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,13,muhelcl,HEL,Choice,254,,,mapunit_hel_class,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,14,muwathelcl,HEL Water,Choice,254,,,mapunit_hel_class,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,15,muwndhelcl,HEL Wind,Choice,254,,,mapunit_hel_class,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,16,interpfocus,Interpretive Focus,String,30,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,17,invesintens,Order of Mapping,Choice,254,,,investigation_intensity,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,18,iacornsr,IA CSR,Integer,,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+mapunit,19,nhiforsoigrp,NH Forest Soil Grp,Choice,254,,,nh_important_forest_soil_group,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,20,nhspiagr,NH SPI Agr,Float,,1,,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+mapunit,21,vtsepticsyscl,VT Septic System,Choice,254,,,vt_septic_system_class_2007,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,22,mucertstat,Map Unit Certification Status,Choice,254,,,mapunit_certification_status,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+mapunit,23,lkey,Legend Key,Integer,,,,,direct_map_unit,mukey,"(y, x)",linkage_key,retain only when it has independent provenance value
+mapunit,24,mukey,Mapunit Key,Integer,,,,,direct_map_unit,mukey,"(y, x)",linkage_key,retain only when it has independent provenance value
+mdstatdomdet,1,domainname,Domain Name,String,40,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatdomdet,2,choicesequence,Choice Sequence,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatdomdet,3,choice,Choice,String,254,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatdomdet,4,choicedesc,Choice Description,Vtext,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatdomdet,5,choiceobsolete,Obsolete Choice?,Boolean,3,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatdommas,1,domainname,Domain Name,String,40,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatdommas,2,domainmaxlen,Domain Maximum Length,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatidxdet,1,tabphyname,Table Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatidxdet,2,idxphyname,Index Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatidxdet,3,idxcolsequence,Index Column Sequence,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatidxdet,4,colphyname,Column Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatidxmas,1,tabphyname,Table Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatidxmas,2,idxphyname,Index Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatidxmas,3,uniqueindex,Unique Index?,Boolean,3,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatrshipdet,1,ltabphyname,Left Table Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatrshipdet,2,rtabphyname,Right Table Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatrshipdet,3,relationshipname,Relationship Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatrshipdet,4,ltabcolphyname,Left Table Column Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatrshipdet,5,rtabcolphyname,Right Table Column Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatrshipmas,1,ltabphyname,Left Table Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatrshipmas,2,rtabphyname,Right Table Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatrshipmas,3,relationshipname,Relationship Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatrshipmas,4,cardinality,Cardinality,Choice,254,,,cardinality,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstatrshipmas,5,mandatory,Mandatory?,Boolean,3,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,1,tabphyname,Table Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,2,colsequence,Column Sequence,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,3,colphyname,Column Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,4,collogname,Column Logical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,5,collabel,Column Label,String,80,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,6,logicaldatatype,Logical Data Type,Choice,254,,,logical_data_type_ssurgo,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,7,notnull,Not Null?,Boolean,3,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,8,fieldsize,Field Size,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,9,precision,Precision,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,10,minimum,Minimum,Float,,2,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,11,maximum,Maximum,Float,,2,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,12,uom,Unit of Measure,String,60,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,13,domainname,Domain Name,String,40,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabcols,14,coldesc,Column Description,Vtext,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabs,1,tabphyname,Table Physical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabs,2,tablogname,Table Logical Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabs,3,tablabel,Table Label,String,80,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabs,4,tabdesc,Table Description,Vtext,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabs,5,iefilename,Import/Export File Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabs,6,daglevel,Dag Level,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabs,7,tabletype,Table Type,String,120,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+mdstattabs,8,iefilenameaoi,Import/Export File Name AOI,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+month,1,monthseq,Month Sequence,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+month,2,monthname,Month Name,String,9,,,flooding_ponding_month,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+muaggatt,1,musym,Mapunit Symbol,String,6,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,2,muname,Mapunit Name,String,175,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,3,mustatus,Status,Choice,254,,,mapunit_status,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,4,slopegraddcp,Slope Gradient - Dominant Component,Float,,1,percent,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,5,slopegradwta,Slope Gradient - Weighted Average,Float,,1,percent,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,6,brockdepmin,Bedrock Depth - Minimum,Integer,,,centimeters,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,7,wtdepannmin,Water Table Depth - Annual - Minimum,Integer,,,centimeters,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,8,wtdepaprjunmin,Water Table Depth - April - June - Minimum,Integer,,,centimeters,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,9,flodfreqdcd,Flooding Frequency - Dominant Condition,Choice,254,,,flooding_frequency_class,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,10,flodfreqmax,Flooding Frequency - Maximum,Choice,254,,,flooding_frequency_class,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,11,pondfreqprs,Ponding Frequency - Presence,Choice,254,,,ponding_frequency_map_legend,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,12,aws025wta,Available Water Storage 0-25 cm - Weighted Average,Float,,2,centimeters,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,13,aws050wta,Available Water Storage 0-50 cm - Weighted Average,Float,,2,centimeters,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,14,aws0100wta,Available Water Storage 0-100 cm - Weighted Average,Float,,2,centimeters,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,15,aws0150wta,Available Water Storage 0-150 cm - Weighted Average,Float,,2,centimeters,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,16,drclassdcd,Drainage Class - Dominant Condition,Choice,254,,,drainage_class,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,17,drclasswettest,Drainage Class - Wettest,Choice,254,,,drainage_class,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,18,hydgrpdcd,Hydrologic Group - Dominant Conditions,Choice,254,,,hydrologic_group,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,19,iccdcd,Irrigated Capability Class - Dominant Condition,Choice,254,,,capability_class,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,20,iccdcdpct,Irrigated Capability Class  - Dominant Condition Aggregate Percent,Integer,,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,21,niccdcd,Non-Irrigated Capability Class - Dominant Condition,Choice,254,,,capability_class,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,22,niccdcdpct,Non-Irrigated Capability Class  - Dominant Condition Aggregate Percent,Integer,,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,23,engdwobdcd,ENG - Dwellings W/O Basements - Dominant Condition,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,24,engdwbdcd,ENG - Dwellings with Basements - Dominant Condition,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,25,engdwbll,ENG - Dwellings with Basements - Least Limiting,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,26,engdwbml,ENG - Dwellings with Basements - Most Limiting,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,27,engstafdcd,ENG - Septic Tank Absorption Fields - Dominant Condition,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,28,engstafll,ENG - Septic Tank Absorption Fields - Least Limiting,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,29,engstafml,ENG - Septic Tank Absorption Fields - Most Limiting,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,30,engsldcd,ENG - Sewage Lagoons - Dominant Condition,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,31,engsldcp,ENG - Sewage Lagoons - Dominant Component,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,32,englrsdcd,ENG - Local Roads and Streets - Dominant Condition,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,33,engcmssdcd,ENG - Construction Materials; Sand Source - Dominant Condition,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,34,engcmssmp,ENG - Construction Materials; Sand Source - Most Probable,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,35,urbrecptdcd,URB/REC - Paths and Trails - Dominant Condition,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,36,urbrecptwta,URB/REC - Paths and Trails - Weighted Average,Float,,2,,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,37,forpehrtdcp,FOR - Potential Erosion Hazard (Road/Trail) - Dominant Component,String,254,,,,direct_map_unit,mukey,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+muaggatt,38,hydclprs,Hydric Classification - Presence,Integer,254,,,hydric_classification_map_legend,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,39,awmmfpwwta,AWM - Manure and Food Processing Waste - Weighted Average,Float,,2,,,direct_map_unit,mukey,"(y, x)",yes_direct,"numeric (y, x) raster"
+muaggatt,40,mukey,Mapunit Key,Integer,,,,,direct_map_unit,mukey,"(y, x)",linkage_key,retain only when it has independent provenance value
+muaoverlap,1,areaovacres,Overlap Acres,Integer,,,acres,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+muaoverlap,2,lareaovkey,Legend Area Overlap Key,Integer,,,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+muaoverlap,3,mukey,Mapunit Key,Integer,,,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+muaoverlap,4,muareaovkey,Mapunit Area Overlap Key,Integer,,,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+mucropyld,1,cropname,Crop Name,Choice,254,,,crop_name,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mucropyld,2,yldunits,Units,Choice,254,,,crop_yield_units,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mucropyld,3,nonirryield_l,Nirr Yield - Low Value,Float,,2,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mucropyld,4,nonirryield_r,Nirr Yield - Representative Value,Float,,2,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mucropyld,5,nonirryield_h,Nirr Yield - High Value,Float,,2,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mucropyld,6,irryield_l,Irr Yield - Low Value,Float,,2,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mucropyld,7,irryield_r,Irr Yield - Representative Value,Float,,2,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mucropyld,8,irryield_h,Irr Yield - High Value,Float,,2,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mucropyld,9,mukey,Mapunit Key,Integer,,,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+mucropyld,10,mucrpyldkey,Mapunit Crop Yield Key,String,,,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+muline,1,objectid,Object ID,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+muline,2,shape,Shape,SQL Geometry,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+muline,3,areasymbol,Area Symbol,String,20,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+muline,4,spatialver,Spatial Version,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+muline,5,musym,Mapunit Symbol,String,6,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+muline,6,mukey,Mapunit Key,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupoint,1,objectid,Object ID,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupoint,2,shape,Shape,SQL Geometry,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupoint,3,areasymbol,Area Symbol,String,20,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupoint,4,spatialver,Spatial Version,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupoint,5,musym,Mapunit Symbol,String,6,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupoint,6,mukey,Mapunit Key,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupolygon,1,objectid,Object ID,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupolygon,2,shape,Shape,SQL Geometry,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupolygon,3,areasymbol,Area Symbol,String,20,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupolygon,4,spatialver,Spatial Version,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupolygon,5,musym,Mapunit Symbol,String,6,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mupolygon,6,mukey,Mapunit Key,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+mutext,1,recdate,Date,Date/Time,,,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mutext,2,mapunittextkind,Kind,Choice,254,,,mapunit_text_kind,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mutext,3,textcat,Category,String,20,,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mutext,4,textsubcat,Subcategory,String,20,,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",possible_dimensioned,category/depth/month dimension or sparse lookup
+mutext,5,text,Text,Vtext,,,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",lookup_only,dictionary/companion table; do not repeat narrative text
+mutext,6,mukey,Mapunit Key,Integer,,,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+mutext,7,mutextkey,Mapunit Text Key,String,254,,,,dimensioned_map_unit,mukey,"(category, y, x) or lookup",linkage_key,retain only when it has independent provenance value
+sacatalog,1,areasymbol,Area Symbol,String,20,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",linkage_key,retain only when it has independent provenance value
+sacatalog,2,areaname,Area Name,String,135,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+sacatalog,3,saversion,Survey Area Version,Integer,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"numeric (y, x) raster"
+sacatalog,4,saverest,Survey Area Version Established,Date/Time,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+sacatalog,5,tabularversion,Tabular Version,Integer,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"numeric (y, x) raster"
+sacatalog,6,tabularverest,Tabular Version Established,Date/Time,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+sacatalog,7,tabnasisexportdate,Tabular NASIS Export Date,Date/Time,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+sacatalog,8,tabcertstatus,Tabular Certification Status,Choice,254,,,export_certification_status,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",yes_direct,"dictionary-coded categorical (y, x) raster"
+sacatalog,9,tabcertstatusdesc,Tabular Certification Status Description,Vtext,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",lookup_only,dictionary/companion table; do not repeat narrative text
+sacatalog,10,fgdcmetadata,FGDC Metadata,Vtext,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",lookup_only,dictionary/companion table; do not repeat narrative text
+sacatalog,11,sacatalogkey,Survey Area Catalog Key,Integer,,,,,direct_survey_area,mukey -> mapunit.lkey -> legend; areasymbol -> sacatalog,"(y, x)",linkage_key,retain only when it has independent provenance value
+sacatalogmbr,1,areasymbol,Area Symbol,String,20,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+sacatalogmbr,2,minx,Min X,Float,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+sacatalogmbr,3,miny,Min Y,Float,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+sacatalogmbr,4,maxx,Max X,Float,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+sacatalogmbr,5,maxy,Max Y,Float,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+sacatalogmbr,6,sacatalogmbrkey,Survey Area Catalog MBR Key,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+sainterp,1,areasymbol,Area Symbol,String,20,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",linkage_key,retain only when it has independent provenance value
+sainterp,2,interpname,Interpretation Name,String,60,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+sainterp,3,interptype,Interpretation Type,Choice,254,,,rule_design,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+sainterp,4,interpdesc,Interpretation Description,Vtext,,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",lookup_only,dictionary/companion table; do not repeat narrative text
+sainterp,5,interpdesigndate,Interpretation Design Date,Date/Time,,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+sainterp,6,interpgendate,Interpretation Generation Date,Date/Time,,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+sainterp,7,interpmaxreasons,Interpretation Maximum Reasons,Integer,,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",possible_dimensioned,category/depth/month dimension or sparse lookup
+sainterp,8,sacatalogkey,Survey Area Catalog Key,Integer,,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",linkage_key,retain only when it has independent provenance value
+sainterp,9,sainterpkey,Survey Area Interpretation Key,String,254,,,,dimensioned_survey_area,survey_area_id/areasymbol/lkey,"lookup or selected (category, y, x)",linkage_key,retain only when it has independent provenance value
+sapolygon,1,objectid,Object ID,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+sapolygon,2,shape,Shape,SQL Geometry,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+sapolygon,3,areasymbol,Area Symbol,String,20,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+sapolygon,4,spatialver,Spatial Version,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+sapolygon,5,lkey,Legend Key,Integer,,,,,vector_or_empty,geometry or empty tables,vector sidecar / none,metadata_or_sidecar,not a pixel variable
+sdvalgorithm,1,algorithmsequence,Algorithm Sequence,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvalgorithm,2,algorithmname,Algorithm Name,String,50,,,algorithm,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvalgorithm,3,algorithminitials,Algorithm Initials,String,3,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvalgorithm,4,algorithmdescription,Algorithm Description,Vtext,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,1,attributekey,Attribute Key,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,2,attributename,Attribute Name,String,60,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,3,attributetablename,Attribute Table Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,4,attributecolumnname,Attribute Column Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,5,attributelogicaldatatype,Attribute Logical Data Type,String,20,,,sdv_attribute_logical_data_type,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,6,attributefieldsize,Attribute Field Size,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,7,attributeprecision,Attribute Precision,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,8,attributedescription,Attribute Description,Vtext,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,9,attributeuom,Attribute Units of Measure,String,60,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,10,attributeuomabbrev,Attribute Units of Measure Abbreviation,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,11,attributetype,Attribute Type,String,20,,,attributetype,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,12,nasisrulename,NASIS Rule Name,String,60,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,13,ruledesign,Rule Design,Integer,,,,rule_design,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,14,notratedphrase,Not Rated Phrase,String,254,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,15,mapunitlevelattribflag,Map Unit Level Attribute Flag,Boolean,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,16,complevelattribflag,Component Level Attribute Flag,Boolean,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,17,cmonthlevelattribflag,Component Month Level Attribute Flag,Boolean,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,18,horzlevelattribflag,Horizon Level Attribute Flag,Boolean,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,19,tiebreakdomainname,Tie Break Domain Name,String,40,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,20,tiebreakruleoptionflag,Tie Break Rule Option Flag,Boolean,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,21,tiebreaklowlabel,Tie Break Low Label,String,20,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,22,tiebreakhighlabel,Tie Break High Label,String,20,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,23,tiebreakrule,Tie Break Rule,Integer,,,,tiebreakrule,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,24,resultcolumnname,Result Column Name,String,10,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,25,sqlwhereclause,SQL Where Clause,String,255,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,26,primaryconcolname,Primary Constraint Column Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,27,pcclogicaldatatype,Primary Constraint Column Logical Data Type,String,20,,,sdv_attribute_logical_data_type,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,28,primaryconstraintlabel,Primary Constraint Label,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,29,secondaryconcolname,Secondary Constraint Column Name,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,30,scclogicaldatatype,Secondary Constraint Column Logical Data Type,String,20,,,sdv_attribute_logical_data_type,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,31,secondaryconstraintlabel,Secondary Constraint Label,String,30,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,32,dqmodeoptionflag,Depth Qualifier Mode Option Flag,Boolean,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,33,depthqualifiermode,Depth Qualifier Mode,String,20,,,depthqualmode,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,34,layerdepthtotop,Layer Depth to Top,Float,,1,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,35,layerdepthtobottom,Layer Depth to Bottom,Float,,1,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,36,layerdepthuom,Layer Depth UOM,String,20,,,depthuom,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,37,monthrangeoptionflag,Month Range Option Flag,Boolean,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,38,beginningmonth,Beginning Month,String,9,,,flooding_ponding_month,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,39,endingmonth,Ending Month,String,9,,,flooding_ponding_month,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,40,horzaggmeth,Horizon Aggregation Method,Choice,30,,,horizon_aggregation_method,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,41,interpnullsaszerooptionflag,Interpret Nulls as Zero Option Flag,Boolean,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,42,interpnullsaszeroflag,Interpret Nulls as Zero Flag,Boolean,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,43,nullratingreplacementvalue,Null Rating Replacement Value,String,254,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,44,basicmodeflag,Basic Mode Flag,Boolean,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,45,maplegendkey,Map Legend Key,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,46,maplegendclasses,Map Legend Classes,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,47,maplegendxml,Map Legend XML,Vtext,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,48,nasissiteid,NASIS Site ID,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,49,wlupdated,Last Updated,Date/Time,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,50,algorithmname,Algorithm Name,String,50,,,algorithm,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,51,componentpercentcutoff,Component Percent Cutoff,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,52,readytodistribute,Ready to Distribute,Boolean,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvattribute,53,effectivelogicaldatatype,Effective Logical Data Type,Choice,20,,,sdv_attribute_logical_data_type,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvfolder,1,foldersequence,Folder Sequence,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvfolder,2,foldername,Folder Name,String,80,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvfolder,3,folderdescription,Folder Description,Vtext,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvfolder,4,folderkey,Folder Key,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvfolder,5,parentfolderkey,Parent Folder Key,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvfolder,6,wlupdated,Last Updated,Date/Time,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvfolderattribute,1,folderkey,Folder Key,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+sdvfolderattribute,2,attributekey,Attribute Key,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+systemtemplateinformation,1,systempinfokey,System Template Information Key,Integer,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+systemtemplateinformation,2,name,Name,String,100,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+systemtemplateinformation,3,value,Value,Vtext,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable
+systemtemplateinformation,4,description,Description,Vtext,,,,,structural_metadata,schema/domain/SDV keys,none,metadata_or_sidecar,not a pixel variable

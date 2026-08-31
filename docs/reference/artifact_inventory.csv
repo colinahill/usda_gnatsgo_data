@@ -1,0 +1,239 @@
+path,name,artifact_type,bytes
+data/gNATSGO_gpkg_01_30_2026/.DS_Store,.DS_Store,none,6148
+data/gNATSGO_gpkg_01_30_2026/MURASTER_30m_CONUS_2026.tfw,MURASTER_30m_CONUS_2026.tfw,tfw,94
+data/gNATSGO_gpkg_01_30_2026/MURASTER_30m_CONUS_2026.tif,MURASTER_30m_CONUS_2026.tif,tif,2850058738
+data/gNATSGO_gpkg_01_30_2026/MURASTER_30m_CONUS_2026.tif.aux.xml,MURASTER_30m_CONUS_2026.tif.aux.xml,tif.aux.xml,4797
+data/gNATSGO_gpkg_01_30_2026/MURASTER_30m_CONUS_2026.tif.ovr,MURASTER_30m_CONUS_2026.tif.ovr,tif.ovr,876572893
+data/gNATSGO_gpkg_01_30_2026/MURASTER_30m_CONUS_2026.tif.vat.cpg,MURASTER_30m_CONUS_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/MURASTER_30m_CONUS_2026.tif.vat.dbf,MURASTER_30m_CONUS_2026.tif.vat.dbf,tif.vat.dbf,12915530
+data/gNATSGO_gpkg_01_30_2026/MURASTER_30m_CONUS_2026.tif.xml,MURASTER_30m_CONUS_2026.tif.xml,tif.xml,45274
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_AK_2026.tfw,SARASTER_30m_AK_2026.tfw,tfw,94
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_AK_2026.tif,SARASTER_30m_AK_2026.tif,tif,467345085
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_AK_2026.tif.aux.xml,SARASTER_30m_AK_2026.tif.aux.xml,tif.aux.xml,1485
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_AK_2026.tif.vat.cpg,SARASTER_30m_AK_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_AK_2026.tif.vat.dbf,SARASTER_30m_AK_2026.tif.vat.dbf,tif.vat.dbf,110100
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_AK_2026.tif.vat.dbf.ARC5DE006VVCPT3.26824.46564.sr.lock,SARASTER_30m_AK_2026.tif.vat.dbf.ARC5DE006VVCPT3.26824.46564.sr.lock,lock,0
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_AK_2026.tif.xml,SARASTER_30m_AK_2026.tif.xml,tif.xml,29864
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_American_Samoa_2026.tfw,SARASTER_30m_American_Samoa_2026.tfw,tfw,84
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_American_Samoa_2026.tif,SARASTER_30m_American_Samoa_2026.tif,tif,142924
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_American_Samoa_2026.tif.aux.xml,SARASTER_30m_American_Samoa_2026.tif.aux.xml,tif.aux.xml,870
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_American_Samoa_2026.tif.ovr,SARASTER_30m_American_Samoa_2026.tif.ovr,tif.ovr,44492
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_American_Samoa_2026.tif.vat.cpg,SARASTER_30m_American_Samoa_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_American_Samoa_2026.tif.vat.dbf,SARASTER_30m_American_Samoa_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_American_Samoa_2026.tif.xml,SARASTER_30m_American_Samoa_2026.tif.xml,tif.xml,23751
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_CONUS_2026.tfw,SARASTER_30m_CONUS_2026.tfw,tfw,94
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_CONUS_2026.tif,SARASTER_30m_CONUS_2026.tif,tif,1002511039
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_CONUS_2026.tif.aux.xml,SARASTER_30m_CONUS_2026.tif.aux.xml,tif.aux.xml,1785
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_CONUS_2026.tif.ovr,SARASTER_30m_CONUS_2026.tif.ovr,tif.ovr,126394347
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_CONUS_2026.tif.vat.cpg,SARASTER_30m_CONUS_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_CONUS_2026.tif.vat.dbf,SARASTER_30m_CONUS_2026.tif.vat.dbf,tif.vat.dbf,2573042
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_CONUS_2026.tif.vat.dbf.ARC5DE006VVCPT3.26824.46564.sr.lock,SARASTER_30m_CONUS_2026.tif.vat.dbf.ARC5DE006VVCPT3.26824.46564.sr.lock,lock,0
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_CONUS_2026.tif.xml,SARASTER_30m_CONUS_2026.tif.xml,tif.xml,29914
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Fed_States_Micronesia_2026.tfw,SARASTER_30m_Fed_States_Micronesia_2026.tfw,tfw,82
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Fed_States_Micronesia_2026.tif,SARASTER_30m_Fed_States_Micronesia_2026.tif,tif,32948859
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Fed_States_Micronesia_2026.tif.aux.xml,SARASTER_30m_Fed_States_Micronesia_2026.tif.aux.xml,tif.aux.xml,892
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Fed_States_Micronesia_2026.tif.ovr,SARASTER_30m_Fed_States_Micronesia_2026.tif.ovr,tif.ovr,10146901
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Fed_States_Micronesia_2026.tif.vat.cpg,SARASTER_30m_Fed_States_Micronesia_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Fed_States_Micronesia_2026.tif.vat.dbf,SARASTER_30m_Fed_States_Micronesia_2026.tif.vat.dbf,tif.vat.dbf,3434
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Fed_States_Micronesia_2026.tif.xml,SARASTER_30m_Fed_States_Micronesia_2026.tif.xml,tif.xml,25894
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Guam_2026.tfw,SARASTER_30m_Guam_2026.tfw,tfw,82
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Guam_2026.tif,SARASTER_30m_Guam_2026.tif,tif,90840
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Guam_2026.tif.aux.xml,SARASTER_30m_Guam_2026.tif.aux.xml,tif.aux.xml,870
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Guam_2026.tif.ovr,SARASTER_30m_Guam_2026.tif.ovr,tif.ovr,19306
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Guam_2026.tif.vat.cpg,SARASTER_30m_Guam_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Guam_2026.tif.vat.dbf,SARASTER_30m_Guam_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_Guam_2026.tif.xml,SARASTER_30m_Guam_2026.tif.xml,tif.xml,23664
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_HI_2026.tfw,SARASTER_30m_HI_2026.tfw,tfw,83
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_HI_2026.tif,SARASTER_30m_HI_2026.tif,tif,5183627
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_HI_2026.tif.aux.xml,SARASTER_30m_HI_2026.tif.aux.xml,tif.aux.xml,13088
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_HI_2026.tif.ovr,SARASTER_30m_HI_2026.tif.ovr,tif.ovr,1577307
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_HI_2026.tif.vat.cpg,SARASTER_30m_HI_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_HI_2026.tif.vat.dbf,SARASTER_30m_HI_2026.tif.vat.dbf,tif.vat.dbf,6642
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_HI_2026.tif.xml,SARASTER_30m_HI_2026.tif.xml,tif.xml,26419
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MH_2026.tfw,SARASTER_30m_MH_2026.tfw,tfw,81
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MH_2026.tif,SARASTER_30m_MH_2026.tif,tif,600722
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MH_2026.tif.aux.xml,SARASTER_30m_MH_2026.tif.aux.xml,tif.aux.xml,868
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MH_2026.tif.ovr,SARASTER_30m_MH_2026.tif.ovr,tif.ovr,193063
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MH_2026.tif.vat.cpg,SARASTER_30m_MH_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MH_2026.tif.vat.dbf,SARASTER_30m_MH_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MH_2026.tif.xml,SARASTER_30m_MH_2026.tif.xml,tif.xml,23655
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MP_2026.tfw,SARASTER_30m_MP_2026.tfw,tfw,82
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MP_2026.tif,SARASTER_30m_MP_2026.tif,tif,1082355
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MP_2026.tif.aux.xml,SARASTER_30m_MP_2026.tif.aux.xml,tif.aux.xml,103009
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MP_2026.tif.ovr,SARASTER_30m_MP_2026.tif.ovr,tif.ovr,356351
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MP_2026.tif.vat.cpg,SARASTER_30m_MP_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MP_2026.tif.vat.dbf,SARASTER_30m_MP_2026.tif.vat.dbf,tif.vat.dbf,1830
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MP_2026.tif.xml,SARASTER_30m_MP_2026.tif.xml,tif.xml,25349
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MX_2026.tfw,SARASTER_30m_MX_2026.tfw,tfw,92
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MX_2026.tif,SARASTER_30m_MX_2026.tif,tif,15923
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MX_2026.tif.aux.xml,SARASTER_30m_MX_2026.tif.aux.xml,tif.aux.xml,870
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MX_2026.tif.vat.cpg,SARASTER_30m_MX_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MX_2026.tif.vat.dbf,SARASTER_30m_MX_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_MX_2026.tif.xml,SARASTER_30m_MX_2026.tif.xml,tif.xml,24161
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PR_2026.tfw,SARASTER_30m_PR_2026.tfw,tfw,90
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PR_2026.tif,SARASTER_30m_PR_2026.tif,tif,1098869
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PR_2026.tif.aux.xml,SARASTER_30m_PR_2026.tif.aux.xml,tif.aux.xml,1162
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PR_2026.tif.ovr,SARASTER_30m_PR_2026.tif.ovr,tif.ovr,301361
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PR_2026.tif.vat.cpg,SARASTER_30m_PR_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PR_2026.tif.vat.dbf,SARASTER_30m_PR_2026.tif.vat.dbf,tif.vat.dbf,5840
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PR_2026.tif.xml,SARASTER_30m_PR_2026.tif.xml,tif.xml,26861
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PW_2026.tfw,SARASTER_30m_PW_2026.tfw,tfw,81
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PW_2026.tif,SARASTER_30m_PW_2026.tif,tif,5176222
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PW_2026.tif.aux.xml,SARASTER_30m_PW_2026.tif.aux.xml,tif.aux.xml,870
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PW_2026.tif.ovr,SARASTER_30m_PW_2026.tif.ovr,tif.ovr,1607665
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PW_2026.tif.vat.cpg,SARASTER_30m_PW_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PW_2026.tif.vat.dbf,SARASTER_30m_PW_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_PW_2026.tif.xml,SARASTER_30m_PW_2026.tif.xml,tif.xml,23649
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_VI_2026.tfw,SARASTER_30m_VI_2026.tfw,tfw,91
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_VI_2026.tif,SARASTER_30m_VI_2026.tif,tif,548197
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_VI_2026.tif.aux.xml,SARASTER_30m_VI_2026.tif.aux.xml,tif.aux.xml,872
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_VI_2026.tif.vat.cpg,SARASTER_30m_VI_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_VI_2026.tif.vat.dbf,SARASTER_30m_VI_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTERS/SARASTER_30m_VI_2026.tif.xml,SARASTER_30m_VI_2026.tif.xml,tif.xml,24346
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_AK_2026.tfw,SARASTER_30m_AK_2026.tfw,tfw,94
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_AK_2026.tif,SARASTER_30m_AK_2026.tif,tif,467345085
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_AK_2026.tif.aux.xml,SARASTER_30m_AK_2026.tif.aux.xml,tif.aux.xml,1485
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_AK_2026.tif.vat.cpg,SARASTER_30m_AK_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_AK_2026.tif.vat.dbf,SARASTER_30m_AK_2026.tif.vat.dbf,tif.vat.dbf,110100
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_AK_2026.tif.xml,SARASTER_30m_AK_2026.tif.xml,tif.xml,29864
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_American_Samoa_2026.tfw,SARASTER_30m_American_Samoa_2026.tfw,tfw,84
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_American_Samoa_2026.tif,SARASTER_30m_American_Samoa_2026.tif,tif,142924
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_American_Samoa_2026.tif.aux.xml,SARASTER_30m_American_Samoa_2026.tif.aux.xml,tif.aux.xml,870
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_American_Samoa_2026.tif.ovr,SARASTER_30m_American_Samoa_2026.tif.ovr,tif.ovr,44492
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_American_Samoa_2026.tif.vat.cpg,SARASTER_30m_American_Samoa_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_American_Samoa_2026.tif.vat.dbf,SARASTER_30m_American_Samoa_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_American_Samoa_2026.tif.xml,SARASTER_30m_American_Samoa_2026.tif.xml,tif.xml,23751
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_CONUS_2026.tfw,SARASTER_30m_CONUS_2026.tfw,tfw,94
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_CONUS_2026.tif,SARASTER_30m_CONUS_2026.tif,tif,1002511039
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_CONUS_2026.tif.aux.xml,SARASTER_30m_CONUS_2026.tif.aux.xml,tif.aux.xml,1785
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_CONUS_2026.tif.ovr,SARASTER_30m_CONUS_2026.tif.ovr,tif.ovr,126394347
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_CONUS_2026.tif.vat.cpg,SARASTER_30m_CONUS_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_CONUS_2026.tif.vat.dbf,SARASTER_30m_CONUS_2026.tif.vat.dbf,tif.vat.dbf,2573042
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_CONUS_2026.tif.xml,SARASTER_30m_CONUS_2026.tif.xml,tif.xml,29914
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Fed_States_Micronesia_2026.tfw,SARASTER_30m_Fed_States_Micronesia_2026.tfw,tfw,82
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Fed_States_Micronesia_2026.tif,SARASTER_30m_Fed_States_Micronesia_2026.tif,tif,32948859
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Fed_States_Micronesia_2026.tif.aux.xml,SARASTER_30m_Fed_States_Micronesia_2026.tif.aux.xml,tif.aux.xml,892
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Fed_States_Micronesia_2026.tif.ovr,SARASTER_30m_Fed_States_Micronesia_2026.tif.ovr,tif.ovr,10146901
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Fed_States_Micronesia_2026.tif.vat.cpg,SARASTER_30m_Fed_States_Micronesia_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Fed_States_Micronesia_2026.tif.vat.dbf,SARASTER_30m_Fed_States_Micronesia_2026.tif.vat.dbf,tif.vat.dbf,3434
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Fed_States_Micronesia_2026.tif.xml,SARASTER_30m_Fed_States_Micronesia_2026.tif.xml,tif.xml,25894
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Guam_2026.tfw,SARASTER_30m_Guam_2026.tfw,tfw,82
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Guam_2026.tif,SARASTER_30m_Guam_2026.tif,tif,90840
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Guam_2026.tif.aux.xml,SARASTER_30m_Guam_2026.tif.aux.xml,tif.aux.xml,870
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Guam_2026.tif.ovr,SARASTER_30m_Guam_2026.tif.ovr,tif.ovr,19306
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Guam_2026.tif.vat.cpg,SARASTER_30m_Guam_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Guam_2026.tif.vat.dbf,SARASTER_30m_Guam_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_Guam_2026.tif.xml,SARASTER_30m_Guam_2026.tif.xml,tif.xml,23664
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_HI_2026.tfw,SARASTER_30m_HI_2026.tfw,tfw,83
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_HI_2026.tif,SARASTER_30m_HI_2026.tif,tif,5183627
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_HI_2026.tif.aux.xml,SARASTER_30m_HI_2026.tif.aux.xml,tif.aux.xml,13088
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_HI_2026.tif.ovr,SARASTER_30m_HI_2026.tif.ovr,tif.ovr,1577307
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_HI_2026.tif.vat.cpg,SARASTER_30m_HI_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_HI_2026.tif.vat.dbf,SARASTER_30m_HI_2026.tif.vat.dbf,tif.vat.dbf,6642
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_HI_2026.tif.xml,SARASTER_30m_HI_2026.tif.xml,tif.xml,26419
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MH_2026.tfw,SARASTER_30m_MH_2026.tfw,tfw,81
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MH_2026.tif,SARASTER_30m_MH_2026.tif,tif,600722
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MH_2026.tif.aux.xml,SARASTER_30m_MH_2026.tif.aux.xml,tif.aux.xml,868
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MH_2026.tif.ovr,SARASTER_30m_MH_2026.tif.ovr,tif.ovr,193063
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MH_2026.tif.vat.cpg,SARASTER_30m_MH_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MH_2026.tif.vat.dbf,SARASTER_30m_MH_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MH_2026.tif.xml,SARASTER_30m_MH_2026.tif.xml,tif.xml,23655
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MP_2026.tfw,SARASTER_30m_MP_2026.tfw,tfw,82
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MP_2026.tif,SARASTER_30m_MP_2026.tif,tif,1082355
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MP_2026.tif.aux.xml,SARASTER_30m_MP_2026.tif.aux.xml,tif.aux.xml,103009
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MP_2026.tif.ovr,SARASTER_30m_MP_2026.tif.ovr,tif.ovr,356351
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MP_2026.tif.vat.cpg,SARASTER_30m_MP_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MP_2026.tif.vat.dbf,SARASTER_30m_MP_2026.tif.vat.dbf,tif.vat.dbf,1830
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MP_2026.tif.xml,SARASTER_30m_MP_2026.tif.xml,tif.xml,25349
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MX_2026.tfw,SARASTER_30m_MX_2026.tfw,tfw,92
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MX_2026.tif,SARASTER_30m_MX_2026.tif,tif,15923
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MX_2026.tif.aux.xml,SARASTER_30m_MX_2026.tif.aux.xml,tif.aux.xml,870
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MX_2026.tif.vat.cpg,SARASTER_30m_MX_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MX_2026.tif.vat.dbf,SARASTER_30m_MX_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_MX_2026.tif.xml,SARASTER_30m_MX_2026.tif.xml,tif.xml,24161
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PR_2026.tfw,SARASTER_30m_PR_2026.tfw,tfw,90
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PR_2026.tif,SARASTER_30m_PR_2026.tif,tif,1098869
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PR_2026.tif.aux.xml,SARASTER_30m_PR_2026.tif.aux.xml,tif.aux.xml,1162
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PR_2026.tif.ovr,SARASTER_30m_PR_2026.tif.ovr,tif.ovr,301361
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PR_2026.tif.vat.cpg,SARASTER_30m_PR_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PR_2026.tif.vat.dbf,SARASTER_30m_PR_2026.tif.vat.dbf,tif.vat.dbf,5840
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PR_2026.tif.xml,SARASTER_30m_PR_2026.tif.xml,tif.xml,26861
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PW_2026.tfw,SARASTER_30m_PW_2026.tfw,tfw,81
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PW_2026.tif,SARASTER_30m_PW_2026.tif,tif,5176222
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PW_2026.tif.aux.xml,SARASTER_30m_PW_2026.tif.aux.xml,tif.aux.xml,870
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PW_2026.tif.ovr,SARASTER_30m_PW_2026.tif.ovr,tif.ovr,1607665
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PW_2026.tif.vat.cpg,SARASTER_30m_PW_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PW_2026.tif.vat.dbf,SARASTER_30m_PW_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_PW_2026.tif.xml,SARASTER_30m_PW_2026.tif.xml,tif.xml,23649
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_VI_2026.tfw,SARASTER_30m_VI_2026.tfw,tfw,91
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_VI_2026.tif,SARASTER_30m_VI_2026.tif,tif,548197
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_VI_2026.tif.aux.xml,SARASTER_30m_VI_2026.tif.aux.xml,tif.aux.xml,872
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_VI_2026.tif.vat.cpg,SARASTER_30m_VI_2026.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_VI_2026.tif.vat.dbf,SARASTER_30m_VI_2026.tif.vat.dbf,tif.vat.dbf,1028
+data/gNATSGO_gpkg_01_30_2026/Soil Surrvey Area Boundaries and Data Source/SARASTER_30m_VI_2026.tif.xml,SARASTER_30m_VI_2026.tif.xml,tif.xml,24346
+data/gNATSGO_gpkg_01_30_2026/gNATSGO_02_13_2026.gpkg,gNATSGO_02_13_2026.gpkg,gpkg,56750667776
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Alaska.tif,muraster_30m_Alaska.tif,tif,99077956
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Alaska.tif.aux.xml,muraster_30m_Alaska.tif.aux.xml,tif.aux.xml,1493
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Alaska.tif.ovr,muraster_30m_Alaska.tif.ovr,tif.ovr,43289277
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Alaska.tif.vat.cpg,muraster_30m_Alaska.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Alaska.tif.vat.dbf,muraster_30m_Alaska.tif.vat.dbf,tif.vat.dbf,158695
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Alaska.tif.xml,muraster_30m_Alaska.tif.xml,tif.xml,46299
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_American_Samoa.tif,muraster_30m_American_Samoa.tif,tif,91720
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_American_Samoa.tif.vat.cpg,muraster_30m_American_Samoa.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_American_Samoa.tif.vat.dbf,muraster_30m_American_Samoa.tif.vat.dbf,tif.vat.dbf,1570
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_American_Samoa.tif.vat.dbf.xml,muraster_30m_American_Samoa.tif.vat.dbf.xml,tif.vat.dbf.xml,1448
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_American_Samoa.tif.xml,muraster_30m_American_Samoa.tif.xml,tif.xml,46108
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Fed_States_Micronesia_2026.tif,muraster_30m_Fed_States_Micronesia_2026.tif,tif,7386545
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Fed_States_Micronesia_2026.tif.aux.xml,muraster_30m_Fed_States_Micronesia_2026.tif.aux.xml,tif.aux.xml,1184
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Fed_States_Micronesia_2026.tif.ovr,muraster_30m_Fed_States_Micronesia_2026.tif.ovr,tif.ovr,3162621
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Fed_States_Micronesia_2026.tif.vat.CPG,muraster_30m_Fed_States_Micronesia_2026.tif.vat.CPG,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Fed_States_Micronesia_2026.tif.vat.dbf,muraster_30m_Fed_States_Micronesia_2026.tif.vat.dbf,tif.vat.dbf,3044
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Fed_States_Micronesia_2026.tif.xml,muraster_30m_Fed_States_Micronesia_2026.tif.xml,tif.xml,49217
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Guam.tif,muraster_30m_Guam.tif,tif,200456
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Guam.tif.ovr,muraster_30m_Guam.tif.ovr,tif.ovr,66980
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Guam.tif.vat.cpg,muraster_30m_Guam.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Guam.tif.vat.dbf,muraster_30m_Guam.tif.vat.dbf,tif.vat.dbf,2370
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Guam.tif.vat.dbf.xml,muraster_30m_Guam.tif.vat.dbf.xml,tif.vat.dbf.xml,1428
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Guam.tif.xml,muraster_30m_Guam.tif.xml,tif.xml,46051
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Hawaii.tif,muraster_30m_Hawaii.tif,tif,4111244
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Hawaii.tif.aux.xml,muraster_30m_Hawaii.tif.aux.xml,tif.aux.xml,1243
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Hawaii.tif.ovr,muraster_30m_Hawaii.tif.ovr,tif.ovr,1564408
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Hawaii.tif.vat.cpg,muraster_30m_Hawaii.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Hawaii.tif.vat.dbf,muraster_30m_Hawaii.tif.vat.dbf,tif.vat.dbf,37981
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Hawaii.tif.xml,muraster_30m_Hawaii.tif.xml,tif.xml,45762
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Marshall_Is_2026.tif,muraster_30m_Marshall_Is_2026.tif,tif,451470
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Marshall_Is_2026.tif.aux.xml,muraster_30m_Marshall_Is_2026.tif.aux.xml,tif.aux.xml,1195
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Marshall_Is_2026.tif.ovr,muraster_30m_Marshall_Is_2026.tif.ovr,tif.ovr,58234
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Marshall_Is_2026.tif.vat.CPG,muraster_30m_Marshall_Is_2026.tif.vat.CPG,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Marshall_Is_2026.tif.vat.dbf,muraster_30m_Marshall_Is_2026.tif.vat.dbf,tif.vat.dbf,409
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Marshall_Is_2026.tif.xml,muraster_30m_Marshall_Is_2026.tif.xml,tif.xml,48954
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Mexico.tif,muraster_30m_Mexico.tif,tif,25054
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Mexico.tif.aux.xml,muraster_30m_Mexico.tif.aux.xml,tif.aux.xml,1250
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Mexico.tif.vat.cpg,muraster_30m_Mexico.tif.vat.cpg,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Mexico.tif.vat.dbf,muraster_30m_Mexico.tif.vat.dbf,tif.vat.dbf,1130
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Mexico.tif.vat.dbf.xml,muraster_30m_Mexico.tif.vat.dbf.xml,tif.vat.dbf.xml,1432
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Mexico.tif.xml,muraster_30m_Mexico.tif.xml,tif.xml,46538
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Northern_Mariana_Is_2026.tif,muraster_30m_Northern_Mariana_Is_2026.tif,tif,957622
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Northern_Mariana_Is_2026.tif.aux.xml,muraster_30m_Northern_Mariana_Is_2026.tif.aux.xml,tif.aux.xml,1192
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Northern_Mariana_Is_2026.tif.ovr,muraster_30m_Northern_Mariana_Is_2026.tif.ovr,tif.ovr,157104
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Northern_Mariana_Is_2026.tif.vat.CPG,muraster_30m_Northern_Mariana_Is_2026.tif.vat.CPG,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Northern_Mariana_Is_2026.tif.vat.dbf,muraster_30m_Northern_Mariana_Is_2026.tif.vat.dbf,tif.vat.dbf,3354
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Northern_Mariana_Is_2026.tif.xml,muraster_30m_Northern_Mariana_Is_2026.tif.xml,tif.xml,49031
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Palau_2026.tif,muraster_30m_Palau_2026.tif,tif,1931274
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Palau_2026.tif.aux.xml,muraster_30m_Palau_2026.tif.aux.xml,tif.aux.xml,1189
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Palau_2026.tif.ovr,muraster_30m_Palau_2026.tif.ovr,tif.ovr,571494
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Palau_2026.tif.vat.CPG,muraster_30m_Palau_2026.tif.vat.CPG,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Palau_2026.tif.vat.dbf,muraster_30m_Palau_2026.tif.vat.dbf,tif.vat.dbf,2021
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Palau_2026.tif.xml,muraster_30m_Palau_2026.tif.xml,tif.xml,48906
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Puerto_Rico_2026.tif,muraster_30m_Puerto_Rico_2026.tif,tif,2321675
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Puerto_Rico_2026.tif.aux.xml,muraster_30m_Puerto_Rico_2026.tif.aux.xml,tif.aux.xml,1277
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Puerto_Rico_2026.tif.ovr,muraster_30m_Puerto_Rico_2026.tif.ovr,tif.ovr,976046
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Puerto_Rico_2026.tif.vat.CPG,muraster_30m_Puerto_Rico_2026.tif.vat.CPG,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Puerto_Rico_2026.tif.vat.dbf,muraster_30m_Puerto_Rico_2026.tif.vat.dbf,tif.vat.dbf,23659
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Puerto_Rico_2026.tif.xml,muraster_30m_Puerto_Rico_2026.tif.xml,tif.xml,48079
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Virgin_Is_2026.tif,muraster_30m_Virgin_Is_2026.tif,tif,316273
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Virgin_Is_2026.tif.aux.xml,muraster_30m_Virgin_Is_2026.tif.aux.xml,tif.aux.xml,1380
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Virgin_Is_2026.tif.ovr,muraster_30m_Virgin_Is_2026.tif.ovr,tif.ovr,98721
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Virgin_Is_2026.tif.vat.CPG,muraster_30m_Virgin_Is_2026.tif.vat.CPG,tif.vat.cpg,5
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Virgin_Is_2026.tif.vat.dbf,muraster_30m_Virgin_Is_2026.tif.vat.dbf,tif.vat.dbf,2238
+data/gNATSGO_gpkg_01_30_2026/muraster_30m_Virgin_Is_2026.tif.xml,muraster_30m_Virgin_Is_2026.tif.xml,tif.xml,48074

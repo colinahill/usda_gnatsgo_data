@@ -1,0 +1,24 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*scratch*
+*.pytest_cache/
+*.ruff_cache/
+*tmp
+
+# Multi-gigabyte source downloads are local inputs, never repository content.
+data/
+
+# DuckDB extensions are platform-specific cached binaries.
+scratch/duckdb_extensions/
+
+# Pipeline intermediates and reports are release-specific local artifacts.
+work/
+
+# Local development icechunk store.
+gnatsgo_store_local/
+
+# Source Coop credential exports.
+creds.json

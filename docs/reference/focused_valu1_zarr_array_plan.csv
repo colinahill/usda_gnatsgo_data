@@ -1,0 +1,13 @@
+path,dimensions,dtype,units,source_fields,notes
+{region}/mukey,"y, x",uint32,,mukey,core spatial key; background 0
+{region}/soil_summary/available_water_storage,"depth_interval, y, x",float32,mm,aws* (11),extensive stock over each layer/zone; NaN missing
+{region}/soil_summary/soil_organic_carbon_stock,"depth_interval, y, x",float32,g C m-2,soc* (11),extensive stock over each layer/zone; NaN missing
+{region}/soil_summary/contributing_thickness,"calculation, depth_interval, y, x",float32,cm,"tk*a, tk*s","calculation={available_water_storage,soil_organic_carbon}; focused list contains 7/11 intervals"
+{region}/soil_summary/nccpi,"crop, y, x",float32,1,"nccpi3corn, nccpi3soy, nccpi3cot, nccpi3sg, nccpi3all","crop={corn,soybeans,cotton,small_grains,maximum}; range 0.01-0.99"
+{region}/soil_summary/component_percent_sum,"calculation, y, x",uint16,%,"musumcpct, musumcpcta, musumcpcts","calculation={all,available_water_storage,soil_organic_carbon}"
+{region}/soil_summary/percent_earthy_major_components,"y, x",uint8,%,pctearthmc,reserve 255 for missing
+{region}/soil_summary/root_zone_depth,"y, x",uint16,cm,rootznemc,major earthy components; 150 cm default if unrestricted
+{region}/soil_summary/root_zone_available_water_storage,"y, x",uint16,mm,rootznaws,major earthy components
+{region}/soil_summary/drought_vulnerable,"y, x",uint8,1,droughty,"0=false, 1=true, 255=missing; root-zone AWS <=152 mm"
+{region}/soil_summary/potential_wetland_soil_landscape_percent,"y, x",uint8,%,pwsl1pomu,0-100 only; reserve 255 for missing and split source code 999
+{region}/soil_summary/water_body,"y, x",uint8,1,pwsl1pomu == 999,"0=false, 1=true, 255=missing; avoids treating 999 as a percent"

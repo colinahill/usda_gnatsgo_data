@@ -1,0 +1,12 @@
+depth_interval,depth_top_cm,depth_bottom_cm,depth_kind,to_reported_profile_depth,source_suffix,aws_available,soc_available,aws_thickness_in_focused_list,soc_thickness_in_focused_list
+0_5,0.0,5.0,layer_and_zone,false,0_5,true,true,false,false
+5_20,5.0,20.0,layer,false,5_20,true,true,false,false
+20_50,20.0,50.0,layer,false,20_50,true,true,true,true
+50_100,50.0,100.0,layer,false,50_100,true,true,true,true
+100_150,100.0,150.0,layer,false,100_150,true,true,true,true
+150_profile,150.0,,layer,true,150_999,true,true,true,true
+0_20,0.0,20.0,zone,false,0_20,true,true,false,false
+0_30,0.0,30.0,zone,false,0_30,true,true,false,false
+0_100,0.0,100.0,zone,false,0_100,true,true,true,true
+0_150,0.0,150.0,zone,false,0_150,true,true,true,true
+0_profile,0.0,,zone,true,0_999,true,true,true,true

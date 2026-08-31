@@ -1,0 +1,13 @@
+group_name,original_name,source_filename
+alaska,Alaska,muraster_30m_Alaska.tif
+american_samoa,American_Samoa,muraster_30m_American_Samoa.tif
+conus,CONUS,MURASTER_30m_CONUS_2026.tif
+fed_states_micronesia,Fed_States_Micronesia,muraster_30m_Fed_States_Micronesia_2026.tif
+guam,Guam,muraster_30m_Guam.tif
+hawaii,Hawaii,muraster_30m_Hawaii.tif
+marshall_is,Marshall_Is,muraster_30m_Marshall_Is_2026.tif
+mexico,Mexico,muraster_30m_Mexico.tif
+northern_mariana_is,Northern_Mariana_Is,muraster_30m_Northern_Mariana_Is_2026.tif
+palau,Palau,muraster_30m_Palau_2026.tif
+puerto_rico,Puerto_Rico,muraster_30m_Puerto_Rico_2026.tif
+virgin_is,Virgin_Is,muraster_30m_Virgin_Is_2026.tif
