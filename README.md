@@ -134,7 +134,23 @@ attrs), sampled windows of the `mukey` array compared byte-for-byte against
 the source MURASTER, sampled scientific pixels compared against the derived
 table row for their map unit, and value-domain spot checks. Run it per region
 after rasterizing; it needs `data/` and `work/` locally for the source
-comparisons (structure-only otherwise).
+comparisons (structure-only otherwise). Results stream as each check finishes.
+
+The scientific samples are points scattered across the grid, so every one is a
+fresh round trip to the store — they are issued concurrently, and `WORKERS`
+matters far more than CPU count against S3. Sampling knobs:
+
+```bash
+make validate ACCOUNT=chill REGIONS=conus \
+    SAMPLES=8 WINDOW=512 \   # random mukey windows compared to the MURASTER
+    VALUE_SAMPLES=200 \      # random pixels checked against the derived tables
+    WORKERS=32 SEED=7         # concurrent point reads; SEED reproduces a run
+```
+
+`VALUE_SAMPLES` counts pixels *drawn*; background ones are skipped, so CONUS
+checks roughly 60% of them against all 42 derived variables (~4,800 point
+reads, about two minutes). Turn it down for a quick smoke check, up before a
+release. `SEED` makes a failing run reproducible.
 
 ### 7. `make release`
 

@@ -12,6 +12,7 @@
 #   make rasterize ACCOUNT=chill REGIONS=conus VARIABLES=mukey,aws
 #   make status ACCOUNT=chill
 #   make validate ACCOUNT=chill REGIONS=guam
+#   make validate ACCOUNT=chill REGIONS=conus VALUE_SAMPLES=40 WORKERS=32
 #   make release ACCOUNT=chill
 
 STORE        ?= ./gnatsgo_store_local
@@ -23,6 +24,9 @@ VARIABLES    ?=
 WORKERS      ?=
 COMMIT_EVERY ?=
 SAMPLES      ?= 8
+WINDOW       ?=
+VALUE_SAMPLES?=
+SEED         ?=
 CREDS_FILE   ?=
 OVERWRITE    ?=
 GC_HOURS     ?=
@@ -41,6 +45,9 @@ WORKERS_FLAG   = $(if $(WORKERS),--workers $(WORKERS))
 OVERWRITE_FLAG = $(if $(OVERWRITE),--overwrite)
 COMMIT_FLAG    = $(if $(COMMIT_EVERY),--commit-every $(COMMIT_EVERY))
 GC_HOURS_FLAG  = $(if $(GC_HOURS),--older-than-hours $(GC_HOURS))
+WINDOW_FLAG    = $(if $(WINDOW),--window $(WINDOW))
+VALUE_SAMPLES_FLAG = $(if $(VALUE_SAMPLES),--value-samples $(VALUE_SAMPLES))
+SEED_FLAG      = $(if $(SEED),--seed $(SEED))
 # only pass a creds file when explicitly requested; otherwise the source-coop
 # CLI's cached login is used (a stale creds.json must not shadow a fresh login)
 CREDS_FLAG     = $(if $(CREDS_FILE),--credentials-file $(CREDS_FILE))
@@ -56,7 +63,8 @@ help: ## Show this help
 	@echo ""
 	@echo "  Variables: STORE=$(STORE)  ACCOUNT=$(ACCOUNT)  SOURCE=$(SOURCE)"
 	@echo "             REGIONS=$(REGIONS)  VARIABLES=$(VARIABLES)  WORKERS=$(WORKERS)"
-	@echo "             COMMIT_EVERY=$(COMMIT_EVERY)  SAMPLES=$(SAMPLES)"
+	@echo "             COMMIT_EVERY=$(COMMIT_EVERY)  SAMPLES=$(SAMPLES)  WINDOW=$(WINDOW)"
+	@echo "             VALUE_SAMPLES=$(VALUE_SAMPLES)  SEED=$(SEED)"
 
 setup: ## Install dependencies (uv sync)
 	uv sync
@@ -88,7 +96,8 @@ status: ## Show the region x variable completion matrix
 	$(CLI) status $(STORE_FLAGS)
 
 validate: ## Phase 6: verify store structure and sampled contents
-	$(CLI) validate $(SOURCE) $(STORE_FLAGS) $(REGIONS_FLAG) --work-dir $(WORK_DIR) --samples $(SAMPLES)
+	$(CLI) validate $(SOURCE) $(STORE_FLAGS) $(REGIONS_FLAG) --work-dir $(WORK_DIR) --samples $(SAMPLES) \
+		$(WINDOW_FLAG) $(VALUE_SAMPLES_FLAG) $(WORKERS_FLAG) $(SEED_FLAG)
 
 release: ## Phase 7: tag the release (refuses while pairs are missing)
 	$(CLI) release $(STORE_FLAGS)

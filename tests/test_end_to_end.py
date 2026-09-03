@@ -172,16 +172,49 @@ def test_provenance_recorded_and_resume_guard(pipeline):
 
 def test_validate_region_passes(pipeline, monkeypatch):
     monkeypatch.setattr(validate, "VALUE_SAMPLES", 25)
-    results = validate.validate_region(
-        pipeline["repo"],
-        TEST_REGION.name,
-        muraster_path=pipeline["release"].muraster_path(TEST_REGION),
-        derived_dir=pipeline["derived"],
-        samples=4,
-        seed=42,
+    results = list(
+        validate.validate_region(
+            pipeline["repo"],
+            TEST_REGION.name,
+            muraster_path=pipeline["release"].muraster_path(TEST_REGION),
+            derived_dir=pipeline["derived"],
+            samples=4,
+            seed=42,
+        )
     )
     failures = [r for r in results if not r.passed]
     assert not failures, failures
+
+
+def test_validate_sampling_is_seeded_and_worker_count_invariant(pipeline):
+    """Concurrency must not change what is sampled: the point reads are issued
+    through a thread pool, but the RNG draws happen up front in serial order,
+    so one worker and many workers must agree check-for-check."""
+
+    def run(workers):
+        return [
+            (r.check, r.passed, r.message)
+            for r in validate.validate_region(
+                pipeline["repo"],
+                TEST_REGION.name,
+                muraster_path=pipeline["release"].muraster_path(TEST_REGION),
+                derived_dir=pipeline["derived"],
+                samples=3,
+                window=8,
+                value_samples=12,
+                workers=workers,
+                seed=7,
+            )
+        ]
+
+    serial, parallel = run(1), run(8)
+    assert serial == parallel
+    assert all(passed for _, passed, _ in serial), serial
+    # value_samples is honoured: 12 sampled pixels is an upper bound on the
+    # (pixel x variable) comparisons, and background pixels are skipped
+    values = next(m for c, _, m in serial if c == "value_equality")
+    n_specs = len([s for s in config.included_variables() if s.algorithm_id != "direct_raster"])
+    assert int(values.split(" of ")[1].split()[0]) <= 12 * n_specs
 
 
 def test_validate_catches_corruption(pipeline, monkeypatch):
@@ -192,13 +225,15 @@ def test_validate_catches_corruption(pipeline, monkeypatch):
     arr[3:5, 3:5] = 12345  # deliberate corruption
     session.commit("corrupt for test")
     try:
-        results = validate.validate_region(
-            repo,
-            TEST_REGION.name,
-            muraster_path=pipeline["release"].muraster_path(TEST_REGION),
-            derived_dir=None,
-            samples=6,
-            seed=0,
+        results = list(
+            validate.validate_region(
+                repo,
+                TEST_REGION.name,
+                muraster_path=pipeline["release"].muraster_path(TEST_REGION),
+                derived_dir=None,
+                samples=6,
+                seed=0,
+            )
         )
         equality = next(r for r in results if r.check == "mukey_equality")
         assert not equality.passed
