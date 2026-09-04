@@ -141,16 +141,26 @@ fresh round trip to the store — they are issued concurrently, and `WORKERS`
 matters far more than CPU count against S3. Sampling knobs:
 
 ```bash
-make validate ACCOUNT=chill REGIONS=conus \
-    SAMPLES=8 WINDOW=512 \   # random mukey windows compared to the MURASTER
-    VALUE_SAMPLES=200 \      # random pixels checked against the derived tables
-    WORKERS=32 SEED=7         # concurrent point reads; SEED reproduces a run
+# SAMPLES/WINDOW: random mukey windows compared to the MURASTER
+# VALUE_SAMPLES:  mapped pixels from those windows checked against the derived tables
+# WORKERS:        concurrent point reads;  SEED: reproduces a run exactly
+make validate ACCOUNT=chill REGIONS=conus SAMPLES=8 WINDOW=512 \
+    VALUE_SAMPLES=200 WORKERS=32 SEED=7
 ```
 
-`VALUE_SAMPLES` counts pixels *drawn*; background ones are skipped, so CONUS
-checks roughly 60% of them against all 42 derived variables (~4,800 point
-reads, about two minutes). Turn it down for a quick smoke check, up before a
-release. `SEED` makes a failing run reproducible.
+**Sampling is biased toward mapped ground, on purpose.** Most regions are mostly
+nodata inside their bounding box — palau is 0.2% nonzero, marshall_is 0.1%,
+american_samoa 5.3% — so uniform random draws land in the ocean and the check
+"passes" without comparing a single map unit. Candidate windows holding no
+mapped pixel are redrawn (up to 64 draws per window wanted), and `VALUE_SAMPLES`
+pixels are then drawn from the mapped positions those windows already read. So
+`VALUE_SAMPLES=200` means 200 real comparisons per variable, in every region,
+not 200 attempts of which most are background. CONUS runs ~8,400 point reads in
+about two minutes. Turn it down for a quick smoke check, up before a release.
+
+A check that ends up comparing nothing **fails** as `insufficient sampling`
+rather than passing — a green tick over zero mapped pixels is worse than a red
+one. The genuine opt-outs (no `data/`, no `work/`) still pass as `skipped`.
 
 ### 7. `make release`
 
