@@ -434,9 +434,21 @@ def validate(
     credentials_file: CredsOpt = None,
     regions: RegionsOpt = "",
     work_dir: WorkDirOpt = Path("work"),
-    samples: Annotated[int, typer.Option(help="random windows compared against the MURASTER")] = 8,
+    samples: Annotated[int, typer.Option(help="random windows with mapped pixels compared against the MURASTER")] = 8,
+    window: Annotated[int, typer.Option(help="edge length in px of each random MURASTER window")] = 512,
+    value_samples: Annotated[
+        int, typer.Option(help="mapped pixels from those windows compared against the derived tables")
+    ] = 200,
+    workers: Annotated[int, typer.Option(help="concurrent point reads; these are latency-bound, so raise for S3")] = 16,
+    seed: Annotated[int | None, typer.Option(help="RNG seed, to reproduce a sampling run exactly")] = None,
 ):
-    """Phase 6: verify store structure and sampled contents."""
+    """Phase 6: verify store structure and sampled contents.
+
+    A large region samples thousands of scattered point reads, so results are
+    logged as each check completes rather than at the end. Sampling is biased
+    toward mapped ground (all-background windows are redrawn), and a check that
+    ends up comparing nothing FAILS as under-sampled rather than passing.
+    """
     from . import validate as validate_mod
 
     release = catalog.locate_release(source) if source else None
@@ -452,6 +464,10 @@ def validate(
             muraster_path=release.muraster_path(region) if release else None,
             derived_dir=derived if derived.exists() else None,
             samples=samples,
+            window=window,
+            value_samples=value_samples,
+            workers=workers,
+            seed=seed,
         )
         for result in results:
             level = logging.INFO if result.passed else logging.ERROR

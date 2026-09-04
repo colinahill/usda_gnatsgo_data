@@ -317,7 +317,15 @@ inspect-release → extract → build-intermediates → init-store → rasterize
 7. **validate** (`validate.py`): structure (shapes, dtypes, coord alignment
    and subgroup-coord identity, required attrs), sampled mukey windows
    byte-equal to the MURASTER, sampled scientific pixels equal to the
-   intermediate row for their mukey, plus domain spot checks.
+   intermediate row for their mukey, plus domain spot checks. Sample counts
+   (`--samples`, `--window`, `--value-samples`), concurrency (`--workers`) and
+   `--seed` are options; the point reads are latency-bound, so they run through
+   a thread pool and results stream as each check completes. Windows are
+   rejection-sampled until they contain mapped pixels and the value pixels are
+   drawn from those windows' own nonzero positions, because uniform draws over a
+   mostly-nodata bounding box (palau 0.2% nonzero) otherwise compare nothing; a
+   check that compares nothing fails as `insufficient sampling` rather than
+   passing.
 8. **release**: refuses while any (region, included-variable) pair is missing;
    creates the immutable `{release}` tag; reopens through the tag and re-reads
    every region. Tags are never deleted (icechunk burns deleted names); re-runs

@@ -7,6 +7,7 @@ import json
 import icechunk
 import numpy as np
 import pytest
+import rasterio
 import typer
 import xarray as xr
 import zarr
@@ -172,16 +173,105 @@ def test_provenance_recorded_and_resume_guard(pipeline):
 
 def test_validate_region_passes(pipeline, monkeypatch):
     monkeypatch.setattr(validate, "VALUE_SAMPLES", 25)
-    results = validate.validate_region(
-        pipeline["repo"],
-        TEST_REGION.name,
-        muraster_path=pipeline["release"].muraster_path(TEST_REGION),
-        derived_dir=pipeline["derived"],
-        samples=4,
-        seed=42,
+    results = list(
+        validate.validate_region(
+            pipeline["repo"],
+            TEST_REGION.name,
+            muraster_path=pipeline["release"].muraster_path(TEST_REGION),
+            derived_dir=pipeline["derived"],
+            samples=4,
+            seed=42,
+        )
     )
     failures = [r for r in results if not r.passed]
     assert not failures, failures
+
+
+def test_validate_sampling_is_seeded_and_worker_count_invariant(pipeline):
+    """Concurrency must not change what is sampled: the point reads are issued
+    through a thread pool, but the RNG draws happen up front in serial order,
+    so one worker and many workers must agree check-for-check."""
+
+    def run(workers):
+        return [
+            (r.check, r.passed, r.message)
+            for r in validate.validate_region(
+                pipeline["repo"],
+                TEST_REGION.name,
+                muraster_path=pipeline["release"].muraster_path(TEST_REGION),
+                derived_dir=pipeline["derived"],
+                samples=3,
+                window=8,
+                value_samples=12,
+                workers=workers,
+                seed=7,
+            )
+        ]
+
+    serial, parallel = run(1), run(8)
+    assert serial == parallel
+    assert all(passed for _, passed, _ in serial), serial
+    # value_samples is honoured, and every draw now lands on a mapped pixel, so
+    # the comparison count is exactly 12 x the non-direct variables
+    values = next(m for c, _, m in serial if c == "value_equality")
+    n_specs = len([s for s in config.included_variables() if s.algorithm_id != "direct_raster"])
+    assert int(values.split(" of ")[1].split()[0]) == 12 * n_specs
+
+
+def test_validate_fails_when_sampling_finds_no_mapped_pixels(pipeline):
+    """A check that compared nothing must fail, not pass: an all-nodata raster
+    used to yield a green mukey_equality over millions of background pixels and
+    a green value_equality over zero values."""
+    tmp_path = pipeline["tmp_path"]
+    empty = tmp_path / "empty_muraster.tif"
+    with rasterio.open(pipeline["release"].muraster_path(TEST_REGION)) as src:
+        profile = src.profile
+    with rasterio.open(empty, "w", **profile) as dst:
+        dst.write(np.zeros((TEST_REGION.height, TEST_REGION.width), dtype="uint32"), 1)
+
+    results = list(
+        validate.validate_region(
+            pipeline["repo"],
+            TEST_REGION.name,
+            muraster_path=empty,
+            derived_dir=pipeline["derived"],
+            samples=3,
+            window=8,
+            value_samples=5,
+            seed=11,
+        )
+    )
+    for check in ("mukey_equality", "value_equality"):
+        result = next(r for r in results if r.check == check)
+        assert not result.passed, result
+        assert "insufficient sampling" in result.message
+        # must not read as a data mismatch
+        assert "mismatch" not in result.message
+
+
+def test_validate_still_skips_cleanly_without_local_sources(pipeline):
+    """The genuine opt-outs stay passes: absent MURASTER / intermediates mean
+    'not asked for', unlike sampling that ran and found nothing."""
+    no_raster = list(
+        validate.validate_region(
+            pipeline["repo"], TEST_REGION.name, muraster_path=None, derived_dir=None, samples=2, seed=1
+        )
+    )
+    mukey = next(r for r in no_raster if r.check == "mukey_equality")
+    assert mukey.passed and "not on disk" in mukey.message
+
+    no_derived = list(
+        validate.validate_region(
+            pipeline["repo"],
+            TEST_REGION.name,
+            muraster_path=pipeline["release"].muraster_path(TEST_REGION),
+            derived_dir=None,
+            samples=2,
+            seed=1,
+        )
+    )
+    values = next(r for r in no_derived if r.check == "value_equality")
+    assert values.passed and "not on disk" in values.message
 
 
 def test_validate_catches_corruption(pipeline, monkeypatch):
@@ -192,13 +282,15 @@ def test_validate_catches_corruption(pipeline, monkeypatch):
     arr[3:5, 3:5] = 12345  # deliberate corruption
     session.commit("corrupt for test")
     try:
-        results = validate.validate_region(
-            repo,
-            TEST_REGION.name,
-            muraster_path=pipeline["release"].muraster_path(TEST_REGION),
-            derived_dir=None,
-            samples=6,
-            seed=0,
+        results = list(
+            validate.validate_region(
+                repo,
+                TEST_REGION.name,
+                muraster_path=pipeline["release"].muraster_path(TEST_REGION),
+                derived_dir=None,
+                samples=6,
+                seed=0,
+            )
         )
         equality = next(r for r in results if r.check == "mukey_equality")
         assert not equality.passed
