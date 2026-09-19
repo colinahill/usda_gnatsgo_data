@@ -167,8 +167,8 @@ storage = icechunk.s3_storage(
 repo = icechunk.Repository.open(storage)
 session = repo.readonly_session("main")  # or tag="2026-02-13" to pin the release
 
-soil = xr.open_zarr(session.store, group="conus/soil_properties")
-mapunit = xr.open_zarr(session.store, group="conus/map_unit_properties")
+soil = xr.open_zarr(session.store, group="conus/soil_properties", chunks=None)
+mapunit = xr.open_zarr(session.store, group="conus/map_unit_properties", chunks=None)
 
 # top-metre available water storage
 aws = soil["aws"].sel(depth_interval="0_100")
